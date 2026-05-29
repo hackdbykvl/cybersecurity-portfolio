@@ -51,7 +51,7 @@ export default function About() {
             </p>
 
             {/* Mini Stats */}
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
 
               {[
                 ["CEH", "Certified"],
@@ -65,7 +65,7 @@ export default function About() {
                     y: -8,
                     borderColor: "rgba(74,222,128,0.3)",
                   }}
-                  className="rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-2xl p-5 transition-all duration-300"
+                  className="rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-2xl p-5 transition-all duration-300 text-left"
                 >
 
                   <p className="text-3xl font-black text-green-400">

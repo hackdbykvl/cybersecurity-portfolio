@@ -2,7 +2,7 @@
   "name": "cyberportfolio",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://hackedbykvl.github.io",
+  "homepage": "https://hackdbykvl.github.io/cybersecurity-portfolio/",
   "type": "module",
   "scripts": {
     "dev": "vite",
