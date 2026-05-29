@@ -429,7 +429,7 @@ Error generating stack: `+e.message+`
                           hover:border-green-400/30\r
                           hover:text-green-300\r
                           hover:bg-green-400/[0.05]\r
-                        `,children:`GITHUB`})})]})]})]}),(0,V.jsxs)(`form`,{onSubmit:async e=>{e.preventDefault(),t(!0),a(``);let n=new FormData(e.target);n.append(`access_key`,`3cebe7d5-e422-4d46-8185-6134abddc383`),n.append(`subject`,`New Cybersecurity Portfolio Message`),n.append(`from_name`,`HACKDBYKVL Portfolio`);try{(await(await fetch(`https://api.web3forms.com/submit`,{method:`POST`,body:n})).json()).success?(r(!0),e.target.reset(),setTimeout(()=>{window.location.href=`https://hackdbykvl.github.io/cybersecurity-portfolio/`},2500)):a(`Transmission Failed.`)}catch{a(`Network Error.`)}t(!1)},className:`space-y-5`,children:[(0,V.jsx)(`input`,{type:`checkbox`,name:`botcheck`,className:`hidden`,style:{display:`none`}}),(0,V.jsxs)(`div`,{className:`grid md:grid-cols-2 gap-5`,children:[(0,V.jsx)(`input`,{type:`text`,placeholder:`Name`,name:`name`,required:!0,autoComplete:`name`,minLength:2,"aria-label":`Your Name`,className:`\r
+                        `,children:`GITHUB`})})]})]})]}),(0,V.jsxs)(`form`,{onSubmit:async e=>{e.preventDefault(),t(!0),a(``),r(!1);let n=new FormData(e.target);n.append(`access_key`,`3cebe7d5-e422-4d46-8185-6134abddc383`),n.append(`subject`,`New Cybersecurity Portfolio Message`),n.append(`from_name`,`HACKDBYKVL Portfolio`);try{(await(await fetch(`https://api.web3forms.com/submit`,{method:`POST`,body:n})).json()).success?(r(!0),e.target.reset(),setTimeout(()=>{window.location.href=`https://hackdbykvl.github.io/cybersecurity-portfolio/`},2500)):a(`Secure transmission failed.`)}catch{a(`Network error. Please try again.`)}t(!1)},className:`space-y-5`,children:[(0,V.jsx)(`input`,{type:`checkbox`,name:`botcheck`,className:`hidden`,style:{display:`none`}}),(0,V.jsxs)(`div`,{className:`grid md:grid-cols-2 gap-5`,children:[(0,V.jsx)(`input`,{type:`text`,placeholder:`Name`,name:`name`,required:!0,autoComplete:`name`,minLength:2,"aria-label":`Your Name`,className:`\r
                       w-full\r
                       px-5\r
                       py-4\r
@@ -475,25 +475,26 @@ Error generating stack: `+e.message+`
                     duration-300\r
                     focus:border-green-400/30\r
                     focus:bg-black/60\r
-                  `}),n&&(0,V.jsx)(`div`,{className:`\r
-                    rounded-2xl\r
-                    border\r
-                    border-green-400/20\r
-                    bg-green-400/10\r
-                    text-green-300\r
-                    px-5\r
-                    py-4\r
-                    text-sm\r
-                  `,children:`Secure transmission successful. Redirecting...`}),i&&(0,V.jsx)(`div`,{className:`\r
-                    rounded-2xl\r
-                    border\r
-                    border-red-500/20\r
-                    bg-red-500/10\r
-                    text-red-300\r
-                    px-5\r
-                    py-4\r
-                    text-sm\r
-                  `,children:i}),(0,V.jsxs)(`div`,{className:`\r
+                  `}),n&&(0,V.jsx)(X.div,{initial:{opacity:0,y:10},animate:{opacity:1,y:0},className:`\r
+                      rounded-2xl\r
+                      border\r
+                      border-green-400/20\r
+                      bg-green-400/10\r
+                      text-green-300\r
+                      px-5\r
+                      py-4\r
+                      text-sm\r
+                      backdrop-blur-xl\r
+                    `,children:`✅ Secure transmission successful. Redirecting...`}),i&&(0,V.jsx)(X.div,{initial:{opacity:0,y:10},animate:{opacity:1,y:0},className:`\r
+                      rounded-2xl\r
+                      border\r
+                      border-red-500/20\r
+                      bg-red-500/10\r
+                      text-red-300\r
+                      px-5\r
+                      py-4\r
+                      text-sm\r
+                    `,children:i}),(0,V.jsxs)(`div`,{className:`\r
                     flex\r
                     flex-col\r
                     md:flex-row\r
@@ -529,6 +530,7 @@ Error generating stack: `+e.message+`
                       duration-300\r
                       hover:shadow-[0_0_40px_rgba(74,222,128,0.35)]\r
                       disabled:opacity-50\r
+                      disabled:cursor-not-allowed\r
                     `,children:[(0,V.jsx)(`span`,{className:`relative z-10`,children:e?`SENDING...`:`SEND MESSAGE`}),(0,V.jsx)(`div`,{className:`absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300`})]})]})]})]})]})]})]})})}var zd=[{title:`Certified Ethical Hacker (CEH)`,subtitle:`EC-Council`,year:`2012`,description:`Foundation in ethical hacking, vulnerability assessment, reconnaissance, and cybersecurity operations.`},{title:`Master of Computer Applications (MCA)`,subtitle:`GUJARAT TECHNOLOGICAL UNIVERSITY`,year:`2016`,description:`Advanced education focused on computer systems, networking, information technology, and digital infrastructure.`},{title:`Cybersecurity & Compliance Focus`,subtitle:`Current Specialization`,year:`Active`,description:`Focused on IT auditing, ISO 27001 readiness, cybersecurity consulting, security operations, and digital trust systems.`}];function Bd(){return(0,V.jsx)($,{children:(0,V.jsxs)(`section`,{id:`credentials`,className:`relative z-10 max-w-7xl mx-auto px-6 py-24 overflow-hidden`,children:[(0,V.jsx)(`div`,{className:`absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,255,170,0.04),transparent_70%)]`}),(0,V.jsxs)(`div`,{className:`relative mb-16`,children:[(0,V.jsx)(`p`,{className:`text-green-400 uppercase tracking-[0.35em] text-sm mb-5`,children:`Credentials`}),(0,V.jsxs)(`h2`,{className:`text-5xl font-black leading-tight mb-6`,children:[`Security`,(0,V.jsx)(`span`,{className:`block text-green-400`,children:`Certifications`}),`& Education`]}),(0,V.jsx)(`p`,{className:`max-w-3xl text-gray-400 text-lg leading-relaxed`,children:`Technical foundation and cybersecurity-focused learning centered around secure systems, compliance, digital infrastructure, and enterprise security operations.`})]}),(0,V.jsx)(`div`,{className:`relative grid lg:grid-cols-3 gap-8`,children:zd.map((e,t)=>(0,V.jsxs)(X.div,{initial:{opacity:0,y:60},whileInView:{opacity:1,y:0},transition:{duration:.8,delay:t*.2},viewport:{once:!0},whileHover:{y:-8,boxShadow:`0px 0px 40px rgba(74,222,128,0.12)`},className:`group relative rounded-[28px] border border-green-400/10 bg-black/40 backdrop-blur-3xl overflow-hidden p-8 transition-all duration-500`,children:[(0,V.jsx)(`div`,{className:`absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-green-400/40 to-transparent`}),(0,V.jsxs)(`div`,{className:`inline-flex items-center gap-2 px-4 py-2 rounded-full border border-green-400/10 bg-green-400/5 text-green-400 text-xs tracking-[0.3em] mb-6`,children:[(0,V.jsx)(`div`,{className:`w-2 h-2 rounded-full bg-green-400 animate-pulse`}),e.year]}),(0,V.jsx)(`h3`,{className:`text-2xl font-black text-white leading-snug mb-3 group-hover:text-green-400 transition-all duration-500`,children:e.title}),(0,V.jsx)(`p`,{className:`text-green-400 text-sm uppercase tracking-[0.25em] mb-5`,children:e.subtitle}),(0,V.jsx)(`p`,{className:`text-gray-400 leading-relaxed`,children:e.description}),(0,V.jsx)(`div`,{className:`mt-8 flex items-center gap-2 text-green-400/40 text-xs tracking-[0.3em] font-mono`,children:`VERIFIED RECORD`})]},e.title))})]})})}function Vd(){return(0,V.jsx)($,{children:(0,V.jsxs)(`section`,{id:`about`,className:`relative z-10 max-w-7xl mx-auto px-6 py-20`,children:[(0,V.jsx)(`div`,{className:`absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(0,255,170,0.06),transparent_60%)]`}),(0,V.jsxs)(`div`,{className:`relative grid lg:grid-cols-2 gap-14 items-center`,children:[(0,V.jsxs)(X.div,{initial:{opacity:0,x:-60},whileInView:{opacity:1,x:0},transition:{duration:1},viewport:{once:!0},children:[(0,V.jsx)(`p`,{className:`text-green-400 uppercase tracking-[0.3em] text-sm mb-5`,children:`About`}),(0,V.jsxs)(`h2`,{className:`text-5xl lg:text-6xl font-black leading-tight mb-8`,children:[`Building`,(0,V.jsx)(`span`,{className:`block text-green-400`,children:`Secure Digital`}),`Infrastructure`]}),(0,V.jsx)(`p`,{className:`text-gray-300 text-lg leading-relaxed mb-6`,children:`Cybersecurity-focused MCA postgraduate and Certified Ethical Hacker with strong interest in security operations, compliance systems, vulnerability assessment, IT auditing, and digital trust.`}),(0,V.jsx)(`p`,{className:`text-gray-400 leading-relaxed mb-10`,children:`Combining technical intelligence, strategic thinking, and futuristic interface design to create secure and trustworthy digital ecosystems.`}),(0,V.jsx)(`div`,{className:`grid grid-cols-1 sm:grid-cols-3 gap-4`,children:[[`CEH`,`Certified`],[`MCA`,`Postgraduate`],[`SOC`,`Focused`]].map(([e,t])=>(0,V.jsxs)(X.div,{whileHover:{y:-8,borderColor:`rgba(74,222,128,0.3)`},className:`rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-2xl p-5 transition-all duration-300 text-left`,children:[(0,V.jsx)(`p`,{className:`text-3xl font-black text-green-400`,children:e}),(0,V.jsx)(`p`,{className:`text-gray-500 text-sm mt-2`,children:t})]},e))})]}),(0,V.jsxs)(X.div,{initial:{opacity:0,x:60},whileInView:{opacity:1,x:0},transition:{duration:.9},viewport:{once:!0},className:`relative`,children:[(0,V.jsx)(X.div,{animate:{scale:[1,1.05,1],opacity:[.35,.5,.35]},transition:{duration:6,repeat:1/0,ease:`easeInOut`},className:`absolute inset-0 bg-green-500/10 blur-[120px] rounded-full`}),(0,V.jsxs)(X.div,{whileHover:{y:-6,boxShadow:`0 0 60px rgba(74,222,128,0.15)`},transition:{type:`spring`,stiffness:120,damping:15},className:`\r
       relative rounded-[32px]\r
       border border-green-400/10\r
