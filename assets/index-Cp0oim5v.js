@@ -326,7 +326,7 @@ Error generating stack: `+e.message+`
         `,children:[(0,V.jsx)(`div`,{className:`absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(74,222,128,0.05),transparent_70%)]`}),(0,V.jsxs)(`div`,{className:`\r
             relative\r
             overflow-hidden\r
-            rounded-[32px]\r
+            rounded-4xl\r
             sm:rounded-[38px]\r
             border\r
             border-green-400/10\r
@@ -405,7 +405,7 @@ Error generating stack: `+e.message+`
                         tracking-[0.35em]\r
                         font-mono\r
                         mb-3\r
-                      `,children:`LOCATION`}),(0,V.jsx)(`p`,{className:`text-gray-300 text-sm sm:text-base`,children:`Ahmedabad, Gujarat, India`})]}),(0,V.jsxs)(`div`,{children:[(0,V.jsx)(`p`,{className:`\r
+                      `,children:`LOCATION`}),(0,V.jsxs)(`p`,{className:`text-gray-300 text-sm sm:text-base flex flex-col gap-1`,children:[(0,V.jsx)(`span`,{children:`#Remote`}),(0,V.jsxs)(`span`,{className:`flex items-center gap-2`,children:[(0,V.jsxs)(`span`,{className:`inline-flex flex-col overflow-hidden rounded-[2px] border border-white/10 w-5 h-3 shadow-sm`,children:[(0,V.jsx)(`span`,{className:`flex-1 bg-orange-400`}),(0,V.jsx)(`span`,{className:`flex-1 bg-white`}),(0,V.jsx)(`span`,{className:`flex-1 bg-green-400`})]}),(0,V.jsxs)(`span`,{children:[(0,V.jsx)(`span`,{className:`text-orange-400 font-semibold`,children:`I`}),(0,V.jsx)(`span`,{className:`text-white font-semibold`,children:`N`})]})]})]})]}),(0,V.jsxs)(`div`,{children:[(0,V.jsx)(`p`,{className:`\r
                         text-green-400/60\r
                         text-[10px]\r
                         sm:text-xs\r
@@ -429,7 +429,7 @@ Error generating stack: `+e.message+`
                           hover:border-green-400/30\r
                           hover:text-green-300\r
                           hover:bg-green-400/[0.05]\r
-                        `,children:`GITHUB`})})]})]})]}),(0,V.jsxs)(`form`,{onSubmit:async e=>{e.preventDefault(),t(!0),a(``),r(!1);let n=new FormData(e.target);n.append(`access_key`,`3cebe7d5-e422-4d46-8185-6134abddc383`),n.append(`subject`,`New Cybersecurity Portfolio Message`),n.append(`from_name`,`HACKDBYKVL Portfolio`);try{(await(await fetch(`https://api.web3forms.com/submit`,{method:`POST`,body:n})).json()).success?(r(!0),e.target.reset(),setTimeout(()=>{window.location.href=`https://hackdbykvl.github.io/cybersecurity-portfolio/`},2500)):a(`Secure transmission failed.`)}catch{a(`Network error. Please try again.`)}t(!1)},className:`space-y-5`,children:[(0,V.jsx)(`input`,{type:`checkbox`,name:`botcheck`,className:`hidden`,style:{display:`none`}}),(0,V.jsxs)(`div`,{className:`grid md:grid-cols-2 gap-5`,children:[(0,V.jsx)(`input`,{type:`text`,placeholder:`Name`,name:`name`,required:!0,autoComplete:`name`,minLength:2,"aria-label":`Your Name`,className:`\r
+                        `,children:`GITHUB`})})]})]})]}),(0,V.jsxs)(`form`,{onSubmit:async e=>{e.preventDefault(),t(!0),a(``),r(!1);let n=new FormData(e.target);n.append(`access_key`,`Enteryouaccesskey`),n.append(`subject`,`New Cybersecurity Portfolio Message`),n.append(`from_name`,`HACKDBYKVL Portfolio`);try{(await(await fetch(`https://api.web3forms.com/submit`,{method:`POST`,body:n})).json()).success?(r(!0),e.target.reset(),setTimeout(()=>{window.location.href=`https://hackdbykvl.github.io/cybersecurity-portfolio/`},2500)):a((0,V.jsxs)(V.Fragment,{children:[`Secure transmission failed. Report to`,` `,(0,V.jsx)(`a`,{href:`mailto:Namahindia9@gmail.com`,className:`text-green-400 underline hover:text-green-300`,children:`Namahindia9@gmail.com`})]}))}catch{a(`Network error. Please try again.`)}t(!1)},className:`space-y-5`,children:[(0,V.jsx)(`input`,{type:`checkbox`,name:`botcheck`,className:`hidden`,style:{display:`none`}}),(0,V.jsxs)(`div`,{className:`grid md:grid-cols-2 gap-5`,children:[(0,V.jsx)(`input`,{type:`text`,placeholder:`Name`,name:`name`,required:!0,autoComplete:`name`,minLength:2,"aria-label":`Your Name`,className:`\r
                       w-full\r
                       px-5\r
                       py-4\r
