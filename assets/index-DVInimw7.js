@@ -436,7 +436,7 @@ Error generating stack: `+e.message+`
                             hover:border-green-400/30\r
                             hover:text-green-300\r
                             hover:bg-green-400/[0.05]\r
-                          `,children:e},e))})]})]})]}),(0,V.jsxs)(`form`,{className:`space-y-5`,children:[(0,V.jsxs)(`div`,{className:`grid md:grid-cols-2 gap-5`,children:[(0,V.jsx)(`input`,{type:`text`,placeholder:`Name`,className:`\r
+                          `,children:e},e))})]})]})]}),(0,V.jsxs)(`form`,{action:`https://api.web3forms.com/submit`,method:`POST`,className:`space-y-5`,children:[(0,V.jsx)(`input`,{type:`hidden`,name:`access_key`,value:`3cebe7d5-e422-4d46-8185-6134abddc383`}),(0,V.jsx)(`input`,{type:`hidden`,name:`subject`,value:`New Cybersecurity Portfolio Message`}),(0,V.jsx)(`input`,{type:`hidden`,name:`from_name`,value:`HACKDBYKVL Portfolio`}),(0,V.jsx)(`input`,{type:`hidden`,name:`redirect`,value:`https://hackdbykvl.github.io/?success=true`}),(0,V.jsx)(`input`,{type:`checkbox`,name:`botcheck`,className:`hidden`,style:{display:`none`}}),(0,V.jsxs)(`div`,{className:`grid md:grid-cols-2 gap-5`,children:[(0,V.jsx)(`input`,{type:`text`,placeholder:`Name`,name:`Name`,className:`\r
                       w-full\r
                       px-5\r
                       py-4\r
@@ -451,7 +451,8 @@ Error generating stack: `+e.message+`
                       duration-300\r
                       focus:border-green-400/30\r
                       focus:bg-black/60\r
-                    `}),(0,V.jsx)(`input`,{type:`email`,placeholder:`Email`,className:`\r
+                      required\r
+                    `}),(0,V.jsx)(`input`,{type:`email`,placeholder:`Email`,name:`email`,className:`\r
                       w-full\r
                       px-5\r
                       py-4\r
@@ -466,7 +467,8 @@ Error generating stack: `+e.message+`
                       duration-300\r
                       focus:border-green-400/30\r
                       focus:bg-black/60\r
-                    `})]}),(0,V.jsx)(`textarea`,{rows:`6`,placeholder:`Transmit secure message...`,className:`\r
+                      required\r
+                    `})]}),(0,V.jsx)(`textarea`,{rows:`6`,placeholder:`Transmit secure message...`,name:`message`,className:`\r
                     w-full\r
                     px-5\r
                     py-4\r
@@ -482,6 +484,7 @@ Error generating stack: `+e.message+`
                     duration-300\r
                     focus:border-green-400/30\r
                     focus:bg-black/60\r
+                    required\r
                   `}),(0,V.jsxs)(`div`,{className:`\r
                   flex\r
                   flex-col\r
