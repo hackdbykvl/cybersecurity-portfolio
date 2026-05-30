@@ -1,6 +1,7 @@
 # Hackedbykvl.github.io
 
 # Cybersecurity Consultant Portfolio
+![Portfolio Preview](portfolio-preview.png)
 
 Professional cybersecurity consultant portfolio showcasing expertise in ISO 27001 compliance, IT auditing, cybersecurity consulting, vulnerability assessments, risk management, and digital trust.
 
@@ -64,11 +65,11 @@ The portfolio features a futuristic cybersecurity-inspired interface including:
 Built-in command terminal featuring: 
 
 * help 
-* whoa 
+* whoami 
 * skills 
 * certs 
 * projects 
-* case studies 
+* casestudies 
 * services 
 * contact 
 * clear 
