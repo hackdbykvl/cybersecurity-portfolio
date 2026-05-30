@@ -3,64 +3,111 @@ import { useEffect, useRef, useState } from "react";
 export default function CyberTerminal() {
 
   const [history, setHistory] = useState([
-    "Initializing secure environment...",
-    "Loading threat intelligence core...",
-    "Decrypting consultant profile...",
-    "Access granted. Type > Help" ,
-    "",
-  ]);
+  "Initializing secure environment...",
+  "Loading threat intelligence core...",
+  "Decrypting consultant profile...",
+  "Access granted.",
+  "",
+  "Type 'help' to view available commands.",
+  "",
+]);
 
   const [input, setInput] = useState("");
 
   const terminalRef = useRef(null);
 
-  const commands = {
+const commands = {
 
-    help: [
-      "Available commands:",
-      "whoami",
-      "skills",
-      "certs",
-      "projects",
-      "contact",
-      "clear",
-    ],
+  help: [
+    "Available commands:",
+    "whoami",
+    "skills",
+    "certs",
+    "projects",
+    "casestudies",
+    "services",
+    "contact",
+    "clear",
+  ],
 
-    whoami: [
-      "Keval Brahmbhatt",
-      "Cybersecurity Consultant",
-      "MCA Postgraduate",
-      "Certified Ethical Hacker (CEH)",
-      "Focused on ISO 27001, IT Auditing & Digital Trust",
-    ],
+  whoami: [
+    "Keval Brahmbhatt",
+    "Cybersecurity Consultant",
+    "MCA Postgraduate",
+    "Certified Ethical Hacker (CEH)",
+    "Focused on ISO 27001, IT Auditing & Digital Trust",
+  ],
 
-    skills: [
-      "ISO 27001",
-      "OWASP ZAP",
-      "Vulnerability Assessment",
-      "Risk Assessment",
-      "Threat Intelligence",
-      "IT Auditing",
-      "Compliance Documentation",
-    ],
+  skills: [
+    "ISO 27001",
+    "OWASP ZAP",
+    "Vulnerability Assessment",
+    "Risk Assessment",
+    "Threat Intelligence",
+    "IT Auditing",
+    "Compliance Documentation",
+    "Security Compliance",
+    "Digital Trust",
+  ],
 
-    certs: [
-      "Certified Ethical Hacker (CEH)",
-      "Master of Computer Applications (MCA)",
-    ],
+  certs: [
+    "Certified Ethical Hacker (CEH)",
+    "Master of Computer Applications (MCA)",
+    "ISO 27001 Compliance & Audit Focus",
+  ],
 
-    projects: [
-      "ISO 27001 Readiness Workflow",
-      "OWASP ZAP Security Lab",
-      "Cybersecurity Consultant Platform",
-    ],
+  projects: [
+    "=== PROJECT PORTFOLIO ===",
+    "",
+    "[1] ISO 27001 Readiness Workflow",
+    "Compliance documentation and audit preparation framework",
+    "",
+    "[2] OWASP ZAP Security Lab",
+    "Automated vulnerability assessment environment",
+    "",
+    "[3] Cybersecurity Consultant Platform",
+    "Professional cybersecurity consulting portfolio",
+  ],
 
-    contact: [
-      "LinkedIn: linkedin.com",
-      "GitHub: github.com",
-      "Email: yourmail@example.com",
-    ],
-  };
+  casestudies: [
+    "=== CYBER INTELLIGENCE REPORTS ===",
+    "",
+    "[1] Enterprise ISO 27001 Gap Analysis",
+    "Category: Compliance Engineering",
+    "Outcome: 60% reduction in compliance gaps",
+    "",
+    "[2] OWASP Top 10 Vulnerability Simulation",
+    "Category: Security Testing Lab",
+    "Outcome: Critical vulnerabilities identified",
+    "",
+    "[3] Security Compliance Monitoring System",
+    "Category: GRC Operations",
+    "Outcome: Real-time compliance visibility",
+    "",
+    "Detailed reports available in the Case Studies section.",
+  ],
+
+  services: [
+  "ISO 27001 Readiness Consulting",
+  "IT Auditing",
+  "Vulnerability Assessments",
+  "Risk Assessments",
+  "Compliance Documentation",
+  "Digital Trust Advisory",
+],
+
+  contact: [
+    "LinkedIn:",
+    "https://linkedin.com/in/YOUR-LINKEDIN",
+    "",
+    "GitHub:",
+    "https://github.com/YOUR-GITHUB",
+    "",
+    "Email:",
+    "yourmail@example.com",
+  ],
+
+};
 
   const runCommand = (cmd) => {
 

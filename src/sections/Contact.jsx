@@ -266,26 +266,133 @@ export default function Contact() {
                       LOCATION
                     </p>
 
-<p className="text-gray-300 text-sm sm:text-base flex flex-col gap-1">
-  <span>#Remote</span>
+<p className="text-gray-300 text-sm sm:text-base flex flex-col gap-2">
 
+  {/* REMOTE */}
   <span className="flex items-center gap-2">
 
-    {/* Mini India Flag */}
-    <span className="inline-flex flex-col overflow-hidden rounded-[2px] border border-white/10 w-5 h-3 shadow-sm">
+    <motion.span
+      animate={{
+        boxShadow: [
+          "0 0 0px rgba(74,222,128,0)",
+          "0 0 8px rgba(74,222,128,0.5)",
+          "0 0 0px rgba(74,222,128,0)",
+        ],
+      }}
+      transition={{
+        duration: 2,
+        repeat: Infinity,
+      }}
+      className="
+        relative
+        inline-flex
+        items-center
+        justify-center
+        overflow-hidden
+        rounded-[2px]
+        border
+        border-white/10
+        w-5
+        h-3
+        bg-slate-900
+      "
+    >
+
+      {/* Center Node */}
+      <motion.span
+        animate={{
+          scale: [1, 1.4, 1],
+          opacity: [0.7, 1, 0.7],
+        }}
+        transition={{
+          duration: 1.5,
+          repeat: Infinity,
+        }}
+        className="
+          absolute
+          w-[3px]
+          h-[3px]
+          rounded-full
+          bg-green-400
+        "
+      />
+
+      {/* Nodes */}
+      <span className="absolute left-[2px] top-[2px] w-[2px] h-[2px] rounded-full bg-cyan-400"></span>
+
+      <span className="absolute right-[2px] top-[2px] w-[2px] h-[2px] rounded-full bg-cyan-400"></span>
+
+      <span className="absolute left-[2px] bottom-[2px] w-[2px] h-[2px] rounded-full bg-cyan-400"></span>
+
+      {/* Connections */}
+      <span className="absolute left-[5px] top-[3px] w-[4px] h-px bg-green-400/70"></span>
+
+      <span className="absolute right-[5px] top-[3px] w-[4px] h-px bg-green-400/70"></span>
+
+      <span className="absolute left-[5px] bottom-[3px] w-[4px] h-px bg-green-400/70"></span>
+
+    </motion.span>
+
+    <motion.span
+      animate={{
+        opacity: [0.75, 1, 0.75],
+      }}
+      transition={{
+        duration: 2,
+        repeat: Infinity,
+      }}
+    >
+      <span className="text-cyan-400 font-semibold">R</span>
+      <span className="text-green-400 font-semibold">EMOTE</span>
+    </motion.span>
+
+  </span>
+
+  {/* INDIA */}
+  <span className="flex items-center gap-2">
+
+    <motion.span
+      animate={{
+        y: [0, -1, 0],
+      }}
+      transition={{
+        duration: 3,
+        repeat: Infinity,
+        ease: "easeInOut",
+      }}
+      className="
+        inline-flex
+        flex-col
+        overflow-hidden
+        rounded-[2px]
+        border
+        border-white/10
+        w-5
+        h-3
+        shadow-sm
+      "
+    >
       <span className="flex-1 bg-orange-400"></span>
       <span className="flex-1 bg-white"></span>
       <span className="flex-1 bg-green-400"></span>
-    </span>
+    </motion.span>
 
-    {/* IND Text */}
-    <span>
+    <motion.span
+      animate={{
+        opacity: [0.8, 1, 0.8],
+      }}
+      transition={{
+        duration: 2.5,
+        repeat: Infinity,
+      }}
+    >
       <span className="text-orange-400 font-semibold">I</span>
       <span className="text-white font-semibold">N</span>
-    {/*  <span className="text-green-400 font-semibold">D</span> */}
-    </span>
+      <span className="text-green-400 font-semibold">D</span>
+    </motion.span>
 
   </span>
+
 </p>
                   </div>
 
@@ -303,33 +410,84 @@ export default function Contact() {
                       NETWORK
                     </p>
 
-                    <div className="flex flex-wrap gap-3 sm:gap-4">
-                      <a
-                        href="https://github.com/hackdbykvl"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="
-                          px-4
-                          sm:px-5
-                          py-3
-                          rounded-2xl
-                          border
-                          border-green-400/10
-                          bg-green-400/[0.03]
-                          text-green-400/70
-                          text-xs
-                          sm:text-sm
-                          tracking-[0.25em]
-                          transition-all
-                          duration-300
-                          hover:border-green-400/30
-                          hover:text-green-300
-                          hover:bg-green-400/[0.05]
-                        "
-                      >
-                        GITHUB
-                      </a>
-                    </div>
+<div className="flex flex-wrap gap-3 sm:gap-4">
+  <a
+    href="https://github.com/hackdbykvl"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="
+      px-4
+      sm:px-5
+      py-3
+      rounded-2xl
+      border
+      border-green-400/10
+      bg-green-400/[0.03]
+      text-green-400/70
+      text-xs
+      sm:text-sm
+      tracking-[0.25em]
+      transition-all
+      duration-300
+      hover:border-green-400/30
+      hover:text-green-300
+      hover:bg-green-400/[0.05]
+    "
+  >
+    GITHUB
+  </a>
+
+  <a
+    href="https://www.linkedin.com/in/keval-brahmbhatt-108a49121"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="
+      px-4
+      sm:px-5
+      py-3
+      rounded-2xl
+      border
+      border-green-400/10
+      bg-green-400/[0.03]
+      text-green-400/70
+      text-xs
+      sm:text-sm
+      tracking-[0.25em]
+      transition-all
+      duration-300
+      hover:border-green-400/30
+      hover:text-green-300
+      hover:bg-green-400/[0.05]
+    "
+  >
+    LINKEDIN
+  </a>
+    <a
+    href="mailto:Namahindia9@gmail.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="
+      px-4
+      sm:px-5
+      py-3
+      rounded-2xl
+      border
+      border-green-400/10
+      bg-green-400/[0.03]
+      text-green-400/70
+      text-xs
+      sm:text-sm
+      tracking-[0.25em]
+      transition-all
+      duration-300
+      hover:border-green-400/30
+      hover:text-green-300
+      hover:bg-green-400/[0.05]
+    "
+  >
+    EMAIL
+  </a>
+</div>
                   </div>
                 </div>
               </div>

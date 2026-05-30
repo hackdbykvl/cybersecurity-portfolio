@@ -1,17 +1,20 @@
 import { motion, AnimatePresence } from "framer-motion";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 export default function LoadingScreen() {
 
   const [loading, setLoading] = useState(true);
 
 useEffect(() => {
+
   const timer = setTimeout(() => {
     setLoading(false);
-  }, 2800); // ⬅️ reduced from 3200ms to 30000ms
+  }, 2800);
 
   return () => clearTimeout(timer);
+
 }, []);
+
   return (
 
     <AnimatePresence>
@@ -23,9 +26,7 @@ useEffect(() => {
           initial={{ opacity: 1 }}
           exit={{
             opacity: 0,
-            transition: {
-              duration: 0.6,
-            },
+            transition: { duration: 0.6 },
           }}
         >
 
@@ -39,9 +40,7 @@ useEffect(() => {
 
           {/* Scan Line */}
           <motion.div
-            animate={{
-              y: ["-100%", "120%"],
-            }}
+            animate={{ y: ["-100%", "120%"] }}
             transition={{
               duration: 4,
               repeat: Infinity,
@@ -65,22 +64,15 @@ useEffect(() => {
                 y: 0,
                 letterSpacing: "0.22em",
               }}
-              transition={{
-                duration: 1,
-              }}
+              transition={{ duration: 1 }}
               className="
-                text-4xl
-                sm:text-5xl
-                md:text-6xl
-                font-black
-                text-green-400
+                text-4xl sm:text-5xl md:text-6xl
+                font-black text-green-400
                 mb-10
                 drop-shadow-[0_0_25px_rgba(74,222,128,0.35)]
               "
             >
-
               HACKEDBYKVL
-
             </motion.h1>
 
             {/* Logs */}
@@ -95,35 +87,18 @@ useEffect(() => {
 
                 <motion.div
                   key={item}
-                  initial={{
-                    opacity: 0,
-                    x: -15,
-                  }}
-                  animate={{
-                    opacity: 1,
-                    x: 0,
-                  }}
+                  initial={{ opacity: 0, x: -15 }}
+                  animate={{ opacity: 1, x: 0 }}
                   transition={{
                     delay: index * 0.35,
                     duration: 0.45,
                   }}
-                  className="
-                    flex
-                    items-center
-                    gap-3
-                    text-green-400/75
-                    font-mono
-                    text-xs
-                    sm:text-sm
-                    tracking-wide
-                  "
+                  className="flex items-center gap-3 text-green-400/75 font-mono text-xs sm:text-sm tracking-wide"
                 >
 
                   <div className="w-2 h-2 rounded-full bg-green-400 animate-pulse"></div>
 
-                  <span>
-                    {item}
-                  </span>
+                  <span>{item}</span>
 
                 </motion.div>
 
@@ -135,12 +110,8 @@ useEffect(() => {
             <div className="relative mt-10 w-full max-w-[280px] h-[2px] bg-white/5 overflow-hidden mx-auto rounded-full">
 
               <motion.div
-                initial={{
-                  width: 0,
-                }}
-                animate={{
-                  width: "100%",
-                }}
+                initial={{ width: 0 }}
+                animate={{ width: "100%" }}
                 transition={{
                   duration: 2.5,
                   ease: "easeInOut",
@@ -152,27 +123,12 @@ useEffect(() => {
 
             {/* Footer Status */}
             <motion.p
-              initial={{
-                opacity: 0,
-              }}
-              animate={{
-                opacity: 1,
-              }}
-              transition={{
-                delay: 1.6,
-              }}
-              className="
-                mt-7
-                text-[9px]
-                sm:text-[10px]
-                tracking-[0.4em]
-                text-green-400/35
-                font-mono
-              "
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 1.6 }}
+              className="mt-7 text-[9px] sm:text-[10px] tracking-[0.4em] text-green-400/35 font-mono"
             >
-
               SECURE • ENCRYPTED • MONITORED
-
             </motion.p>
 
           </div>
@@ -184,5 +140,4 @@ useEffect(() => {
     </AnimatePresence>
 
   );
-
 }

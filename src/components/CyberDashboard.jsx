@@ -1,24 +1,14 @@
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
+
+
 
 export default function CyberDashboard() {
-
   const stats = [
-    {
-      title: "Threat Detection",
-      value: "99.2%",
-    },
-    {
-      title: "Security Score",
-      value: "A+",
-    },
-    {
-      title: "Incidents Blocked",
-      value: "1,284",
-    },
-    {
-      title: "Active Monitoring",
-      value: "24/7",
-    },
+    { title: "Threat Detection", value: 99.2, suffix: "%" },
+    { title: "Security Score", value: "A+", suffix: "" },
+    { title: "Incidents Blocked", value: 1284, suffix: "" },
+    { title: "Active Monitoring", value: "24/7", suffix: "" },
   ];
 
   const logs = [
@@ -30,183 +20,189 @@ export default function CyberDashboard() {
     "System secure",
   ];
 
-  return (
+  const [typedLogs, setTypedLogs] = useState([]);
+  const [currentLogIndex, setCurrentLogIndex] = useState(0);
+  const [currentText, setCurrentText] = useState("");
 
+  const [progress, setProgress] = useState(0);
+
+  const [animatedStats, setAnimatedStats] = useState({
+    threat: 0,
+    score: "A+",
+    incidents: 0,
+    monitor: "24/7",
+  });
+
+  /* =====================
+     TYPEWRITER LOG EFFECT (NEW)
+  ===================== */
+  useEffect(() => {
+    if (currentLogIndex >= logs.length) return;
+
+    const currentLog = logs[currentLogIndex];
+    let charIndex = 0;
+
+    const interval = setInterval(() => {
+      if (charIndex <= currentLog.length) {
+        setCurrentText(currentLog.slice(0, charIndex));
+        charIndex++;
+      } else {
+        clearInterval(interval);
+
+        // push completed log
+        setTypedLogs((prev) => [...prev, currentLog]);
+
+        // move to next log after small pause
+        setTimeout(() => {
+          setCurrentText("");
+          setCurrentLogIndex((prev) => prev + 1);
+        }, 600);
+      }
+    }, 35); // typing speed
+
+    return () => clearInterval(interval);
+  }, [currentLogIndex]);
+
+  /* =====================
+     PROGRESS ANIMATION
+  ===================== */
+  useEffect(() => {
+    let p = 0;
+    const interval = setInterval(() => {
+      p += 1;
+      if (p <= 99) setProgress(p);
+      else clearInterval(interval);
+    }, 60);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  /* =====================
+     STATS ANIMATION
+  ===================== */
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setAnimatedStats((prev) => {
+        const nextThreat = Math.min(Number(prev.threat) + 1.2, 99.2);
+        const nextIncidents = Math.min(Number(prev.incidents) + 17, 1284);
+
+        return {
+          threat: nextThreat,
+          score: "A+",
+          incidents: Math.floor(nextIncidents),
+          monitor: "24/7",
+        };
+      });
+    }, 80);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
     <motion.div
-      animate={{
-        y: [0, -10, 0],
-      }}
-      transition={{
-        duration: 3,
-        repeat: Infinity,
-      }}
+      animate={{ y: [0, -8, 0] }}
+      transition={{ duration: 4, repeat: Infinity }}
       className="relative w-full max-w-[700px] mx-auto"
     >
-
       {/* Glow */}
-      <div className="absolute inset-0 bg-green-500/10 blur-[100px] rounded-full"></div>
+      <div className="absolute inset-0 bg-green-500/10 blur-[100px] rounded-full" />
 
-      {/* Main Panel */}
-      <div className="relative overflow-hidden rounded-[28px] border border-green-400/10 bg-black/50 backdrop-blur-3xl shadow-[0_0_60px_rgba(74,222,128,0.08)]">
+      {/* Panel */}
+      <div className="relative overflow-hidden rounded-[28px] border border-green-400/10 bg-black/50 backdrop-blur-3xl">
 
         {/* Top Bar */}
-        <div className="flex items-center justify-between gap-4 px-4 sm:px-6 py-4 border-b border-white/5">
-
+        <div className="flex justify-between px-6 py-4 border-b border-white/5">
           <div>
-
-            <h3 className="text-green-400 font-bold text-lg sm:text-xl tracking-wide">
-
+            <h3 className="text-green-400 font-bold text-lg">
               Threat Intelligence Core
-
             </h3>
-
-            <p className="text-gray-500 text-xs sm:text-sm">
-
+            <p className="text-gray-500 text-xs">
               Real-Time Security Monitoring
-
             </p>
-
           </div>
 
-          {/* Window Dots */}
-          <div className="flex gap-2 shrink-0">
-
-            <div className="w-3 h-3 rounded-full bg-red-500"></div>
-            <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-            <div className="w-3 h-3 rounded-full bg-green-500"></div>
-
+          <div className="flex gap-2">
+            <div className="w-3 h-3 rounded-full bg-red-500" />
+            <div className="w-3 h-3 rounded-full bg-yellow-500" />
+            <div className="w-3 h-3 rounded-full bg-green-500" />
           </div>
-
         </div>
 
-        {/* Content */}
-        <div className="p-4 sm:p-6 space-y-5 sm:space-y-6">
+        <div className="p-6 space-y-6">
 
-          {/* Security Meter */}
-          <div className="rounded-2xl border border-white/5 bg-white/[0.03] p-4 sm:p-5">
-
-            <div className="flex items-center justify-between mb-3">
-
-              <span className="text-gray-400 text-xs sm:text-sm">
-
-                Infrastructure Security
-
-              </span>
-
-              <span className="text-green-400 text-xs sm:text-sm font-bold">
-
-                98%
-
-              </span>
-
+          {/* SECURITY METER */}
+          <div className="p-4 rounded-2xl border border-white/5 bg-white/5">
+            <div className="flex justify-between mb-2 text-sm text-gray-400">
+              <span>Infrastructure Security</span>
+              <span className="text-green-400 font-bold">{progress}%</span>
             </div>
 
-            <div className="w-full h-2 rounded-full bg-white/5 overflow-hidden">
-
+            <div className="h-2 bg-white/10 rounded-full overflow-hidden">
               <motion.div
-                initial={{ width: 0 }}
-                animate={{ width: "98%" }}
-                transition={{
-                  duration: 1,
-                }}
                 className="h-full bg-gradient-to-r from-green-400 to-cyan-400"
+                style={{ width: `${progress}%` }}
               />
-
             </div>
-
           </div>
 
-          {/* Stats */}
-          <div className="grid grid-cols-2 gap-3 sm:gap-4">
-
-            {stats.map((item) => (
-
-              <motion.div
-                key={item.title}
-
-                whileHover={{
-                  scale: 1.03,
-                  borderColor: "rgba(74,222,128,0.3)",
-                }}
-
-                className="rounded-2xl border border-white/5 bg-white/[0.03] p-4 sm:p-5 transition-all duration-300"
-              >
-
-                <p className="text-gray-400 text-[11px] sm:text-sm mb-2 leading-relaxed">
-
-                  {item.title}
-
-                </p>
-
-                <h4 className="text-2xl sm:text-3xl font-black text-green-400 break-words">
-
-                  {item.value}
-
-                </h4>
-
-              </motion.div>
-
-            ))}
-
-          </div>
-
-          {/* Live Logs */}
-          <div className="rounded-2xl border border-green-400/10 bg-black/60 p-4 sm:p-5">
-
-            <div className="flex items-center justify-between mb-4 gap-3">
-
-              <h4 className="text-green-400 font-bold text-sm sm:text-base">
-
-                LIVE SECURITY LOGS
-
+          {/* STATS */}
+          <div className="grid grid-cols-2 gap-4">
+            <div className="p-4 rounded-2xl bg-white/5 border border-white/5">
+              <p className="text-gray-400 text-sm">Threat Detection</p>
+              <h4 className="text-2xl font-black text-green-400">
+                {animatedStats.threat.toFixed(1)}%
               </h4>
-
-              <div className="flex items-center gap-2 text-[10px] sm:text-xs text-green-400 shrink-0">
-
-                <div className="w-2 h-2 rounded-full bg-green-400 animate-pulse"></div>
-
-                LIVE
-
-              </div>
-
             </div>
 
-            <div className="space-y-2 font-mono text-[11px] sm:text-sm text-green-400/80 break-words">
+            <div className="p-4 rounded-2xl bg-white/5 border border-white/5">
+              <p className="text-gray-400 text-sm">Security Score</p>
+              <h4 className="text-2xl font-black text-green-400">A+</h4>
+            </div>
 
-              {logs.map((log, index) => (
+            <div className="p-4 rounded-2xl bg-white/5 border border-white/5">
+              <p className="text-gray-400 text-sm">Incidents Blocked</p>
+              <h4 className="text-2xl font-black text-green-400">
+                {animatedStats.incidents}
+              </h4>
+            </div>
 
-                <motion.p
-                  key={index}
+            <div className="p-4 rounded-2xl bg-white/5 border border-white/5">
+              <p className="text-gray-400 text-sm">Active Monitoring</p>
+              <h4 className="text-2xl font-black text-green-400">24/7</h4>
+            </div>
+          </div>
 
-                  initial={{
-                    opacity: 0,
-                    x: -10,
-                  }}
+          {/* LIVE LOGS (TYPEWRITER ONLY HERE) */}
+          <div className="p-4 rounded-2xl border border-green-400/10 bg-black/60">
+            <div className="flex justify-between mb-3">
+              <h4 className="text-green-400 font-bold text-sm">
+                LIVE SECURITY LOGS
+              </h4>
+              <span className="text-green-400 text-xs animate-pulse">
+                ● LIVE
+              </span>
+            </div>
 
-                  animate={{
-                    opacity: 1,
-                    x: 0,
-                  }}
+            <div className="font-mono text-sm text-green-400/80 space-y-1">
 
-                  transition={{
-                    delay: index * 0.2,
-                  }}
-                >
-
-                  &gt; {log}
-
-                </motion.p>
-
+              {/* completed logs */}
+              {typedLogs.map((log, i) => (
+                <p key={i}>&gt; {log}</p>
               ))}
 
-            </div>
+              {/* current typing line */}
+              {currentLogIndex < logs.length && (
+                <p className="text-green-300">
+                  &gt; {currentText}
+                  <span className="animate-pulse">|</span>
+                </p>
+              )}
 
+            </div>
           </div>
 
         </div>
-
       </div>
-
     </motion.div>
   );
 }

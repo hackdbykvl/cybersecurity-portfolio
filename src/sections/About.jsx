@@ -63,7 +63,7 @@ export default function About() {
                   key={title}
                   whileHover={{
                     y: -8,
-                    borderColor: "rgba(74,222,128,0.3)",
+              borderColor: "rgba(74,222,128,0.3)",  
                   }}
                   className="rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-2xl p-5 transition-all duration-300 text-left"
                 >

@@ -1,7 +1,16 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 
-const links = ["about", "skills", "projects", "contact"];
+const links = [
+  { label: "about", href: "about" },
+  { label: "skills", href: "skills" },
+  { label: "projects", href: "projects" },
+  { label: "case studies", href: "casestudies" },
+  { label: "services", href: "services" },
+  { label: "contact", href: "contact" },
+
+  
+];
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -9,17 +18,14 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50">
 
-      {/* BACKGROUND LAYER */}
       <div className="absolute inset-0 bg-black/60 backdrop-blur-2xl border-b border-green-400/10"></div>
 
-      {/* SCANLINE GLOW */}
       <div className="absolute inset-0 pointer-events-none opacity-10">
         <div className="w-full h-full bg-[linear-gradient(rgba(0,255,170,0.08)_1px,transparent_1px)] bg-[size:100%_4px] animate-pulse" />
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 md:px-6 py-4 flex items-center justify-between">
 
-        {/* BRAND */}
         <div className="min-w-0">
           <h1 className="text-sm md:text-xl font-black tracking-[0.18em] text-white">
             KEVAL <span className="text-green-400">BRAHMBHATT</span>
@@ -30,39 +36,34 @@ export default function Navbar() {
           </p>
         </div>
 
-        {/* DESKTOP NAV */}
+        {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-10">
 
           {links.map((link) => (
             <a
-              key={link}
-              href={`#${link}`}
+              key={link.href}
+              href={`#${link.href}`}
               className="relative group text-sm uppercase tracking-[0.28em] text-gray-400 hover:text-green-400 transition-all duration-300"
             >
-
-              {/* Brackets */}
               <span className="opacity-0 group-hover:opacity-100 transition">
                 [
               </span>
 
-              {link}
+              {link.label}
 
               <span className="opacity-0 group-hover:opacity-100 transition">
                 ]
               </span>
 
-              {/* SCANLINE UNDER EFFECT */}
               <span className="absolute left-0 -bottom-1 w-0 h-[1px] bg-green-400 group-hover:w-full transition-all duration-100 shadow-[0_0_10px_rgba(74,222,128,0.6)]"></span>
 
-              {/* GLITCH DOT */}
               <span className="absolute -right-2 top-0 w-1 h-1 bg-green-400 opacity-0 group-hover:opacity-100 animate-ping"></span>
-
             </a>
           ))}
 
         </nav>
 
-        {/* MOBILE BUTTON */}
+        {/* Mobile Button */}
         <button
           onClick={() => setOpen(!open)}
           className="md:hidden text-green-400 text-xs tracking-[0.3em]"
@@ -71,7 +72,7 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* MOBILE CONTROL PANEL */}
+      {/* Mobile Menu */}
       {open && (
         <motion.div
           initial={{ opacity: 0, y: -10 }}
@@ -85,16 +86,15 @@ export default function Navbar() {
 
           {links.map((link) => (
             <a
-              key={link}
-              href={`#${link}`}
+              key={link.href}
+              href={`#${link.href}`}
               onClick={() => setOpen(false)}
               className="block text-sm uppercase tracking-[0.3em] text-gray-400 hover:text-green-400 transition"
             >
-              &gt; {link}
+              &gt; {link.label}
             </a>
           ))}
 
-          {/* bottom status */}
           <div className="pt-4 border-t border-green-400/10 text-[10px] text-green-400/40 tracking-[0.35em] font-mono">
             SECURE CHANNEL ACTIVE
           </div>

@@ -6,17 +6,18 @@ import Footer from "./components/Footer";
 import SecurityTape from "./components/SecurityTape";
 import SectionDivider from "./components/SectionDivider";
 import ThreatTicker from "./components/ThreatTicker";
-
 import ScrollProgress from "./components/ScrollProgress";
+import CyberTerminal from "./components/Terminal";
 
+
+import Services from "./sections/Services";
 import Hero from "./sections/Hero";
 import Skills from "./sections/Skills";
 import Projects from "./sections/Projects";
 import Contact from "./sections/Contact";
 import Certifications from "./sections/Certifications";
 import About from "./sections/About";
-import CyberTerminal from "./components/Terminal";
-
+import CaseStudies from "./sections/CaseStudies";
 
 import CursorGlow from "./effects/CursorGlow";
 
@@ -45,6 +46,7 @@ export default function App() {
       {/* MAIN APP */}
       <main className="relative z-10 min-h-screen bg-black text-white">
 
+        
         {/* NAVBAR */}
         <Navbar />
 
@@ -69,11 +71,14 @@ export default function App() {
 
         <SectionDivider />
         <Projects />
-
         <SectionDivider />
+        <CaseStudies/>
+        <SectionDivider />
+        <Services />
         <Contact />
-
+        
         <Footer />
+        
       </main>
     </>
   );

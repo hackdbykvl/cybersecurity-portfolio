@@ -1,33 +1,32 @@
 import { motion } from "framer-motion";
 import Reveal from "../components/Reveal";
-import RadarScanner from "../components/RadarScanner";
 
 const projects = [
   {
-    title: "Cybersecurity Consultant Platform",
-
-    category: "Security Infrastructure",
-
-    description:
-      "Professional cybersecurity consulting platform focused on digital trust, operational visibility, secure infrastructure, and enterprise security positioning.",
-  },
-
-  {
-    title: "ISO 27001 Readiness Workflow",
+    title: "ISO 27001 Readiness Assessment",
 
     category: "Compliance Operations",
 
     description:
-      "Structured compliance workflow system designed around risk assessment, audit preparation, governance alignment, and security documentation strategy.",
+      "Risk register, controls mapping, and audit checklist workflows designed for structured ISO 27001 readiness and governance alignment.",
   },
 
   {
-    title: "OWASP ZAP Security Lab",
+    title: "OWASP ZAP Security Audit",
 
     category: "Vulnerability Assessment",
 
     description:
-      "Security testing environment focused on reconnaissance workflows, vulnerability analysis, attack surface evaluation, and operational reporting.",
+      "Vulnerability scan environment focused on findings reports, risk rating analysis, and attack surface evaluation for operational security auditing.",
+  },
+
+  {
+    title: "Security Compliance Dashboard",
+
+    category: "Security Infrastructure",
+
+    description:
+      "GRC-style reporting system built for risk tracking, compliance monitoring, IT audit documentation, SOPs, policies, and gap analysis workflows.",
   },
 ];
 
@@ -51,12 +50,7 @@ export default function Projects() {
         "
       >
 
-        {/* Radar System */}
-        <div className="absolute inset-0 opacity-40 pointer-events-none">
 
-          <RadarScanner />
-
-        </div>
 
         {/* Atmospheric Glow */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,255,170,0.04),transparent_70%)]"></div>
@@ -103,8 +97,8 @@ export default function Projects() {
           ">
 
             Security-focused operational systems centered around
-            cybersecurity consulting, compliance readiness,
-            vulnerability assessment, and secure infrastructure workflows.
+            ISO 27001 readiness assessment, vulnerability scanning,
+            compliance monitoring, and IT audit documentation workflows.
 
           </p>
 
@@ -118,6 +112,7 @@ export default function Projects() {
           lg:grid-cols-3
           gap-5
           sm:gap-7
+          items-stretch
         ">
 
           {projects.map((project, index) => (
@@ -164,6 +159,10 @@ export default function Projects() {
                 sm:p-8
                 transition-all
                 duration-500
+                flex
+                flex-col
+                h-full
+                min-h-[360px]
               "
             >
 
@@ -191,77 +190,93 @@ export default function Projects() {
                 bg-[radial-gradient(circle_at_top,rgba(74,222,128,0.08),transparent_70%)]
               "></div>
 
-              {/* Category */}
+              {/* Content Wrapper */}
               <div className="
                 relative
-                inline-flex
-                items-center
-                gap-2
-                px-4
-                py-2
-                rounded-full
-                border
-                border-green-400/10
-                bg-green-400/5
-                text-green-400
-                text-[10px]
-                sm:text-xs
-                tracking-[0.3em]
-                mb-6
-              ">
-
-                <div className="w-2 h-2 rounded-full bg-green-400 animate-pulse"></div>
-
-                {project.category}
-
-              </div>
-
-              {/* Title */}
-              <h3 className="
-                relative
-                text-xl
-                sm:text-2xl
-                font-black
-                text-white
-                leading-snug
-                mb-5
-                group-hover:text-green-400
-                transition-all
-                duration-500
-              ">
-
-                {project.title}
-
-              </h3>
-
-              {/* Description */}
-              <p className="
-                relative
-                text-gray-400
-                leading-relaxed
-                text-sm
-                sm:text-base
-              ">
-
-                {project.description}
-
-              </p>
-
-              {/* Bottom Status */}
-              <div className="
-                relative
-                mt-8
                 flex
-                items-center
-                gap-2
-                text-green-400/40
-                text-[10px]
-                sm:text-xs
-                tracking-[0.3em]
-                font-mono
+                flex-col
+                h-full
               ">
 
-                OPERATIONAL SYSTEM
+                {/* Category */}
+                <div className="
+                  inline-flex
+                  items-center
+                  gap-2
+                  px-4
+                  py-2
+                  rounded-full
+                  border
+                  border-green-400/10
+                  bg-green-400/5
+                  text-green-400
+                  text-[10px]
+                  sm:text-xs
+                  tracking-[0.3em]
+                  mb-6
+                  w-fit
+                ">
+
+                  <div className="w-2 h-2 rounded-full bg-green-400 animate-pulse"></div>
+
+                  {project.category}
+
+                </div>
+
+                {/* Title */}
+                <h3 className="
+                  text-xl
+                  sm:text-2xl
+                  font-black
+                  text-white
+                  leading-snug
+                  mb-5
+                  group-hover:text-green-400
+                  transition-all
+                  duration-500
+                  min-h-[72px]
+                  flex
+                  items-start
+                ">
+
+                  {project.title}
+
+                </h3>
+
+                {/* Description */}
+                <p className="
+                  text-gray-400
+                  leading-relaxed
+                  text-sm
+                  sm:text-base
+                  flex-1
+                  min-h-[120px]
+                ">
+
+                  {project.description}
+
+                </p>
+
+                {/* Bottom Status */}
+                <div className="
+                  mt-8
+                  flex
+                  items-center
+                  gap-2
+                  text-green-400/40
+                  text-[10px]
+                  sm:text-xs
+                  tracking-[0.3em]
+                  font-mono
+                  mt-auto
+                  pt-4
+                ">
+
+                  <div className="w-2 h-2 rounded-full bg-green-400/40"></div>
+
+                  OPERATIONAL SYSTEM
+
+                </div>
 
               </div>
 
