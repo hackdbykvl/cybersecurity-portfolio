@@ -1,8 +1,15 @@
-![React](https://img.shields.io/badge/React-18-blue)
-![Vite](https://img.shields.io/badge/Vite-5-purple)
-![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3-cyan)
-![Cybersecurity](https://img.shields.io/badge/Cybersecurity-Consultant-green)
-![ISO27001](https://img.shields.io/badge/ISO27001-Compliance-success)
+![Cybersecurity](https://img.shields.io/badge/Cybersecurity-Consultant-00ff88)
+![ISO27001](https://img.shields.io/badge/ISO%2027001-Compliance-success)
+![IT Audit](https://img.shields.io/badge/IT-Audit-blue)
+![Risk Management](https://img.shields.io/badge/Risk-Management-orange)
+![OWASP](https://img.shields.io/badge/OWASP-Top%2010-red)
+![Vulnerability Assessment](https://img.shields.io/badge/Vulnerability-Assessment-yellow)
+![Information Security](https://img.shields.io/badge/Information-Security-brightgreen)
+![GRC](https://img.shields.io/badge/GRC-Governance%20Risk%20Compliance-purple)
+
+![React](https://img.shields.io/badge/React-18-61DAFB)
+![Vite](https://img.shields.io/badge/Vite-5-646CFF)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3-06B6D4)
 # Hackedbykvl.github.io
 
 # Cybersecurity Consultant Portfolio
