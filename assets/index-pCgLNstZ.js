@@ -522,7 +522,7 @@ py-4\r
       tracking-wider\r
       text-center\r
       whitespace-nowrap\r
-    `,children:`SECURE TUNNEL ACTIVE`}),(0,V.jsx)(`span`,{className:`\r
+    `,children:`SECURE TUNNEL`}),(0,V.jsx)(`span`,{className:`\r
       text-[9px]\r
       sm:text-[10px]\r
       text-green-400/60\r
