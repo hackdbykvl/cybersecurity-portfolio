@@ -576,7 +576,7 @@ py-4
       whitespace-nowrap
     "
   >
-    SECURE TUNNEL ACTIVE
+    SECURE TUNNEL
   </motion.span>
 
   <span
