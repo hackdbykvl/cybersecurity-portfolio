@@ -380,20 +380,20 @@ Error generating stack: `+e.message+`
                   sm:text-lg\r
                   leading-relaxed\r
                 `,children:`Open for cybersecurity consulting, compliance systems, IT auditing, vulnerability assessments, and secure digital operations.`})]}),(0,V.jsxs)(`div`,{className:`\r
-                grid\r
-                lg:grid-cols-[0.85fr_1.15fr]\r
-                gap-8\r
-                lg:gap-10\r
-                items-start\r
-              `,children:[(0,V.jsxs)(`div`,{className:`space-y-5 sm:space-y-6`,children:[(0,V.jsxs)(`div`,{className:`\r
-                    rounded-3xl\r
-                    border\r
-                    border-green-400/10\r
-                    bg-white/[0.02]\r
-                    backdrop-blur-xl\r
-                    p-5\r
-                    sm:p-6\r
-                  `,children:[(0,V.jsx)(`p`,{className:`\r
+    grid\r
+    lg:grid-cols-[0.75fr_1.25fr]\r
+    gap-6\r
+    lg:gap-8\r
+    items-start\r
+  `,children:[(0,V.jsxs)(`div`,{className:`space-y-5 sm:space-y-6`,children:[(0,V.jsxs)(`div`,{className:`\r
+rounded-2xl\r
+border\r
+border-green-400/10\r
+bg-white/[0.02]\r
+backdrop-blur-xl\r
+px-5\r
+py-4\r
+`,children:[(0,V.jsx)(`p`,{className:`\r
                       text-green-400/60\r
                       text-[10px]\r
                       sm:text-xs\r
@@ -408,15 +408,15 @@ Error generating stack: `+e.message+`
                       text-sm\r
                       sm:text-base\r
                     `,children:[(0,V.jsx)(`div`,{className:`w-2 h-2 rounded-full bg-green-400 animate-pulse`}),`Available For Secure Collaboration`]})]}),(0,V.jsxs)(`div`,{className:`\r
-                    rounded-3xl\r
-                    border\r
-                    border-green-400/10\r
-                    bg-white/[0.02]\r
-                    backdrop-blur-xl\r
-                    p-5\r
-                    sm:p-6\r
-                    space-y-7\r
-                  `,children:[(0,V.jsxs)(`div`,{children:[(0,V.jsx)(`p`,{className:`\r
+    rounded-2xl\r
+    border\r
+    border-green-400/10\r
+    bg-white/[0.02]\r
+    backdrop-blur-xl\r
+    p-4\r
+    sm:p-5\r
+    space-y-5\r
+  `,children:[(0,V.jsxs)(`div`,{children:[(0,V.jsx)(`p`,{className:`\r
                         text-green-400/60\r
                         text-[10px]\r
                         sm:text-xs\r
@@ -430,7 +430,7 @@ Error generating stack: `+e.message+`
     border\r
     border-green-400/10\r
     bg-black/40\r
-    p-4\r
+    p-3\r
   `,children:[(0,V.jsx)(`div`,{className:`absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(74,222,128,0.08),transparent_70%)]`}),(0,V.jsx)(X.div,{animate:{y:[`-100%`,`250%`]},transition:{duration:4,repeat:1/0,ease:`linear`},className:`\r
       absolute\r
       left-0\r
@@ -438,7 +438,7 @@ Error generating stack: `+e.message+`
       h-px\r
       bg-green-400/30\r
       blur-sm\r
-    `}),(0,V.jsx)(`div`,{className:`absolute inset-0 opacity-20`,children:(0,V.jsx)(`div`,{className:`absolute inset-0 bg-[linear-gradient(rgba(74,222,128,0.2)_1px,transparent_1px),linear-gradient(90deg,rgba(74,222,128,0.2)_1px,transparent_1px)] bg-[size:18px_18px]`})}),(0,V.jsxs)(`div`,{className:`relative z-10 space-y-4`,children:[(0,V.jsxs)(`div`,{className:`flex items-center justify-between`,children:[(0,V.jsx)(`div`,{className:`flex items-center gap-3`,children:(0,V.jsxs)(`span`,{className:`flex items-center gap-2`,children:[(0,V.jsxs)(X.span,{animate:{boxShadow:[`0 0 0px rgba(74,222,128,0)`,`0 0 8px rgba(74,222,128,0.5)`,`0 0 0px rgba(74,222,128,0)`]},transition:{duration:2,repeat:1/0},className:`\r
+    `}),(0,V.jsx)(`div`,{className:`absolute inset-0 opacity-20`,children:(0,V.jsx)(`div`,{className:`absolute inset-0 bg-[linear-gradient(rgba(74,222,128,0.2)_1px,transparent_1px),linear-gradient(90deg,rgba(74,222,128,0.2)_1px,transparent_1px)] bg-[size:18px_18px]`})}),(0,V.jsxs)(`div`,{className:`relative z-10 space-y-3`,children:[(0,V.jsxs)(`div`,{className:`flex items-center justify-between`,children:[(0,V.jsx)(`div`,{className:`flex items-center gap-3`,children:(0,V.jsxs)(`span`,{className:`flex items-center gap-2`,children:[(0,V.jsxs)(X.span,{animate:{boxShadow:[`0 0 0px rgba(74,222,128,0)`,`0 0 8px rgba(74,222,128,0.5)`,`0 0 0px rgba(74,222,128,0)`]},transition:{duration:2,repeat:1/0},className:`\r
           relative\r
           inline-flex\r
           items-center\r
@@ -465,19 +465,19 @@ Error generating stack: `+e.message+`
         border-white/10\r
         w-5\r
         h-3\r
-      `,children:[(0,V.jsx)(`span`,{className:`flex-1 bg-orange-400`}),(0,V.jsx)(`span`,{className:`flex-1 bg-white`}),(0,V.jsx)(`span`,{className:`flex-1 bg-green-400`})]}),(0,V.jsxs)(`span`,{className:`font-semibold`,children:[(0,V.jsx)(`span`,{className:`text-orange-400`,children:`I`}),(0,V.jsx)(`span`,{className:`text-white`,children:`N`}),(0,V.jsx)(`span`,{className:`text-green-400`,children:`D`})]})]}),(0,V.jsx)(`span`,{className:`text-cyan-400 text-sm font-mono`,children:`GMT +5:30`})]}),(0,V.jsxs)(`div`,{className:`relative py-2`,children:[(0,V.jsxs)(`div`,{className:`relative flex items-center justify-between`,children:[(0,V.jsx)(X.div,{animate:{boxShadow:[`0 0 0px rgba(74,222,128,0.3)`,`0 0 18px rgba(74,222,128,0.8)`,`0 0 0px rgba(74,222,128,0.3)`]},transition:{duration:2,repeat:1/0},className:`\r
+      `,children:[(0,V.jsx)(`span`,{className:`flex-1 bg-orange-400`}),(0,V.jsx)(`span`,{className:`flex-1 bg-white`}),(0,V.jsx)(`span`,{className:`flex-1 bg-green-400`})]}),(0,V.jsxs)(`span`,{className:`font-semibold`,children:[(0,V.jsx)(`span`,{className:`text-orange-400`,children:`I`}),(0,V.jsx)(`span`,{className:`text-white`,children:`N`}),(0,V.jsx)(`span`,{className:`text-green-400`,children:`D`})]})]}),(0,V.jsx)(`span`,{className:`text-orange-400 text-sm font-mono`,children:`GMT +5:30`})]}),(0,V.jsxs)(`div`,{className:`relative py-2`,children:[(0,V.jsxs)(`div`,{className:`relative flex items-center justify-between`,children:[(0,V.jsx)(X.div,{animate:{boxShadow:[`0 0 0px rgba(74,222,128,0.3)`,`0 0 18px rgba(74,222,128,0.8)`,`0 0 0px rgba(74,222,128,0.3)`]},transition:{duration:2,repeat:1/0},className:`\r
         w-3\r
         h-3\r
         rounded-full\r
         bg-green-400\r
         relative\r
         z-10\r
-      `}),(0,V.jsx)(`div`,{className:`absolute left-2 right-2 h-px bg-green-400/20 overflow-hidden`,children:(0,V.jsx)(X.div,{animate:{x:[`-20%`,`120%`]},transition:{duration:2.5,repeat:1/0,ease:`linear`},className:`\r
+      `}),(0,V.jsx)(`div`,{className:`absolute left-2 right-2 h-px bg-green-400/20 overflow-hidden`,children:(0,V.jsx)(X.div,{animate:{x:[`-20%`,`530%`]},transition:{duration:2.5,repeat:1/0,ease:`linear`},className:`\r
           absolute\r
           top-0\r
           w-12\r
           h-px\r
-          bg-gradient-to-r\r
+          bg-linear-to-r\r
           from-transparent\r
           via-green-400\r
           to-transparent\r
@@ -488,7 +488,7 @@ Error generating stack: `+e.message+`
         bg-cyan-400\r
         relative\r
         z-10\r
-      `})]}),(0,V.jsxs)(`div`,{className:`flex justify-between mt-3`,children:[(0,V.jsx)(`span`,{className:`text-[10px] text-green-400/60 font-mono tracking-wider`,children:`INDIA NODE`}),(0,V.jsx)(X.span,{animate:{opacity:[.5,1,.5]},transition:{duration:2,repeat:1/0},className:`\r
+      `})]}),(0,V.jsxs)(`div`,{className:`flex justify-between mt-3`,children:[(0,V.jsx)(`span`,{className:`text-[10px] text-green-400/60 font-mono tracking-wider`,children:`INDIA NODE`}),(0,V.jsx)(X.span,{animate:{opacity:[.5,1,.5]},transition:{duration:1,repeat:1/0},className:`\r
         text-[10px]\r
         text-cyan-400\r
         font-mono\r
@@ -500,73 +500,58 @@ Error generating stack: `+e.message+`
                         tracking-[0.35em]\r
                         font-mono\r
                         mb-3\r
-                      `,children:`NETWORK`}),(0,V.jsxs)(`div`,{className:`grid grid-cols-1 sm:grid-cols-3 gap-4`,children:[(0,V.jsxs)(`a`,{href:`https://github.com/hackdbykvl`,target:`_blank`,rel:`noopener noreferrer`,className:`\r
-      group\r
-      flex\r
-      flex-col\r
-      items-center\r
-      justify-center\r
-      h-[120px]\r
-      rounded-3xl\r
-      border\r
-      border-green-400/10\r
-      bg-green-400/[0.03]\r
-      hover:border-green-400/40\r
-      hover:bg-green-400/[0.06]\r
-      transition-all\r
-      duration-300\r
-      hover:-translate-y-1\r
-    `,children:[(0,V.jsx)(nf,{size:42,className:`\r
-        text-green-400\r
-        mb-3\r
-        transition-transform\r
-        duration-300\r
-        group-hover:scale-110\r
-      `}),(0,V.jsx)(`h4`,{className:`text-white font-bold`,children:`GitHub`}),(0,V.jsx)(`p`,{className:`text-green-400/70 text-xs mt-1`,children:`Security Projects`})]}),(0,V.jsxs)(`a`,{href:`https://www.linkedin.com/in/keval-brahmbhatt-108a49121`,target:`_blank`,rel:`noopener noreferrer`,className:`\r
-      group\r
-      flex\r
-      flex-col\r
-      items-center\r
-      justify-center\r
-      h-[120px]\r
-      rounded-3xl\r
-      border\r
-      border-cyan-400/10\r
-      bg-cyan-400/[0.03]\r
-      hover:border-cyan-400/40\r
-      hover:bg-cyan-400/[0.06]\r
-      transition-all\r
-      duration-300\r
-      hover:-translate-y-1\r
-    `,children:[(0,V.jsx)(tf,{size:42,className:`\r
-        text-cyan-400\r
-        mb-3\r
-        transition-transform\r
-        duration-300\r
-        group-hover:scale-110\r
-      `}),(0,V.jsx)(`h4`,{className:`text-white font-bold`,children:`LinkedIn`}),(0,V.jsx)(`p`,{className:`text-cyan-400/70 text-xs mt-1`,children:`Professional Profile`})]}),(0,V.jsxs)(`a`,{href:`mailto:Namahindia9@gmail.com`,className:`\r
-      group\r
-      flex\r
-      flex-col\r
-      items-center\r
-      justify-center\r
-      h-[120px]\r
-      rounded-3xl\r
-      border\r
-      border-orange-400/10\r
-      bg-orange-400/[0.03]\r
-      hover:border-orange-400/40\r
-      hover:bg-orange-400/[0.06]\r
-      transition-all\r
-      duration-300\r
-      hover:-translate-y-1\r
-    `,children:[(0,V.jsx)(rf,{size:42,className:`\r
-        text-orange-400\r
-        mb-3\r
-        transition-transform\r
-        duration-300\r
-        group-hover:scale-110\r
-      `}),(0,V.jsx)(`h4`,{className:`text-white font-bold`,children:`Email`}),(0,V.jsx)(`p`,{className:`text-orange-400/70 text-xs mt-1`,children:`Secure Contact`})]})]})]})]})]}),(0,V.jsxs)(`form`,{onSubmit:async e=>{e.preventDefault(),t(!0),a(``),r(!1);let n=new FormData(e.target);n.append(`access_key`,`Enteryouaccesskey`),n.append(`subject`,`New Cybersecurity Portfolio Message`),n.append(`from_name`,`HACKDBYKVL Portfolio`);try{(await(await fetch(`https://api.web3forms.com/submit`,{method:`POST`,body:n})).json()).success?(r(!0),e.target.reset(),setTimeout(()=>{window.location.href=`https://hackdbykvl.github.io/cybersecurity-portfolio/`},2500)):a((0,V.jsxs)(V.Fragment,{children:[`Secure transmission failed. Report to`,` `,(0,V.jsx)(`a`,{href:`mailto:Namahindia9@gmail.com`,className:`text-green-400 underline hover:text-green-300`,children:`Namahindia9@gmail.com`})]}))}catch{a(`Network error. Please try again.`)}t(!1)},className:`space-y-5`,children:[(0,V.jsx)(`input`,{type:`checkbox`,name:`botcheck`,className:`hidden`,style:{display:`none`}}),(0,V.jsxs)(`div`,{className:`grid md:grid-cols-2 gap-5`,children:[(0,V.jsx)(`input`,{type:`text`,placeholder:`Name`,name:`name`,required:!0,autoComplete:`name`,minLength:2,"aria-label":`Your Name`,className:`\r
+                      `,children:`NETWORK`}),(0,V.jsxs)(`div`,{className:`grid grid-cols-3 gap-2`,children:[(0,V.jsxs)(X.a,{whileHover:{y:-3,scale:1.03},whileTap:{scale:.98},href:`https://github.com/hackdbykvl`,target:`_blank`,rel:`noopener noreferrer`,className:`\r
+    group\r
+    flex\r
+    flex-col\r
+    items-center\r
+    justify-center\r
+    text-center\r
+    gap-1\r
+    rounded-2xl\r
+    border\r
+    border-green-400/10\r
+    bg-green-400/[0.03]\r
+    py-3\r
+    px-2\r
+    hover:border-green-400/40\r
+    hover:bg-green-400/[0.06]\r
+    transition-all\r
+  `,children:[(0,V.jsx)(X.div,{animate:{y:[0,-3,0],scale:[1,1.08,1]},transition:{duration:1,repeat:1/0,ease:`easeInOut`},children:(0,V.jsx)(nf,{size:18,className:`text-green-400`})}),(0,V.jsx)(`span`,{className:`text-xs font-semibold text-white`,children:`GitHub`}),(0,V.jsx)(`span`,{className:`text-[10px] text-green-400/70`,children:`Projects`})]}),(0,V.jsxs)(X.a,{whileHover:{y:-3,scale:1.03},whileTap:{scale:.98},href:`https://www.linkedin.com/in/keval-brahmbhatt-108a49121`,target:`_blank`,rel:`noopener noreferrer`,className:`\r
+    group\r
+    flex\r
+    flex-col\r
+    items-center\r
+    justify-center\r
+    text-center\r
+    gap-1\r
+    rounded-2xl\r
+    border\r
+    border-cyan-400/10\r
+    bg-cyan-400/3\r
+    py-3\r
+    px-2\r
+    hover:border-cyan-400/40\r
+    hover:bg-cyan-400/6\r
+    transition-all\r
+  `,children:[(0,V.jsx)(X.div,{animate:{y:[0,-3,0],scale:[1,1.08,1]},transition:{duration:1,repeat:1/0,ease:`easeInOut`},children:(0,V.jsx)(tf,{size:18,className:`text-cyan-400`})}),(0,V.jsx)(`span`,{className:`text-xs font-semibold text-white`,children:`LinkedIn`}),(0,V.jsx)(`span`,{className:`text-[10px] text-cyan-400/70`,children:`Profile`})]}),(0,V.jsxs)(X.a,{whileHover:{y:-3,scale:1.03},whileTap:{scale:.98},href:`mailto:Namahindia9@gmail.com`,className:`\r
+    group\r
+    flex\r
+    flex-col\r
+    items-center\r
+    justify-center\r
+    text-center\r
+    gap-1\r
+    rounded-2xl\r
+    border\r
+    border-orange-400/10\r
+    bg-orange-400/[0.03]\r
+    py-3\r
+    px-2\r
+    hover:border-orange-400/40\r
+    hover:bg-orange-400/[0.06]\r
+    transition-all\r
+  `,children:[(0,V.jsx)(X.div,{animate:{y:[0,-3,0],scale:[1,1.08,1]},transition:{duration:1,repeat:1/0,ease:`easeInOut`},children:(0,V.jsx)(rf,{size:18,className:`text-orange-400`})}),(0,V.jsx)(`span`,{className:`text-xs font-semibold text-white`,children:`Email`}),(0,V.jsx)(`span`,{className:`text-[10px] text-orange-400/70`,children:`Contact`})]})]})]})]})]}),(0,V.jsxs)(`form`,{onSubmit:async e=>{e.preventDefault(),t(!0),a(``),r(!1);let n=new FormData(e.target);n.append(`access_key`,`Enteryouaccesskey`),n.append(`subject`,`New Cybersecurity Portfolio Message`),n.append(`from_name`,`HACKDBYKVL Portfolio`);try{(await(await fetch(`https://api.web3forms.com/submit`,{method:`POST`,body:n})).json()).success?(r(!0),e.target.reset(),setTimeout(()=>{window.location.href=`https://hackdbykvl.github.io/cybersecurity-portfolio/`},2500)):a((0,V.jsxs)(V.Fragment,{children:[`Secure transmission failed. Report to`,` `,(0,V.jsx)(`a`,{href:`mailto:Namahindia9@gmail.com`,className:`text-green-400 underline hover:text-green-300`,children:`Namahindia9@gmail.com`})]}))}catch{a(`Network error. Please try again.`)}t(!1)},className:`space-y-5`,children:[(0,V.jsx)(`input`,{type:`checkbox`,name:`botcheck`,className:`hidden`,style:{display:`none`}}),(0,V.jsxs)(`div`,{className:`grid md:grid-cols-2 gap-5`,children:[(0,V.jsx)(`input`,{type:`text`,placeholder:`Name`,name:`name`,required:!0,autoComplete:`name`,minLength:2,"aria-label":`Your Name`,className:`\r
                       w-full\r
                       px-5\r
                       py-4\r
