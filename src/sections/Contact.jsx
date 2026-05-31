@@ -25,7 +25,7 @@ export default function Contact() {
 
     const formData = new FormData(e.target);
     
-    {/* ie.Web3Forms */}
+    // Web3Forms
     formData.append(
       "access_key",
       "Enteryouaccesskey" 
@@ -196,28 +196,28 @@ export default function Contact() {
             </div>
 
             {/* Main Layout */}
-            <div
-              className="
-                grid
-                lg:grid-cols-[0.85fr_1.15fr]
-                gap-8
-                lg:gap-10
-                items-start
-              "
-            >
+           <div
+  className="
+    grid
+    lg:grid-cols-[0.75fr_1.25fr]
+    gap-6
+    lg:gap-8
+    items-start
+  "
+>
               {/* LEFT SIDE */}
               <div className="space-y-5 sm:space-y-6">
                 {/* Status Card */}
                 <div
-                  className="
-                    rounded-3xl
-                    border
-                    border-green-400/10
-                    bg-white/[0.02]
-                    backdrop-blur-xl
-                    p-5
-                    sm:p-6
-                  "
+                 className="
+rounded-2xl
+border
+border-green-400/10
+bg-white/[0.02]
+backdrop-blur-xl
+px-5
+py-4
+"
                 >
                   <p
                     className="
@@ -249,18 +249,18 @@ export default function Contact() {
                 </div>
 
                 {/* Contact Info */}
-                <div
-                  className="
-                    rounded-3xl
-                    border
-                    border-green-400/10
-                    bg-white/[0.02]
-                    backdrop-blur-xl
-                    p-5
-                    sm:p-6
-                    space-y-7
-                  "
-                >
+               <div
+  className="
+    rounded-2xl
+    border
+    border-green-400/10
+    bg-white/[0.02]
+    backdrop-blur-xl
+    p-4
+    sm:p-5
+    space-y-5
+  "
+>
                   <div>
                     <p
                       className="
@@ -282,7 +282,7 @@ export default function Contact() {
     border
     border-green-400/10
     bg-black/40
-    p-4
+    p-3
   "
 >
 
@@ -314,7 +314,7 @@ export default function Contact() {
     <div className="absolute inset-0 bg-[linear-gradient(rgba(74,222,128,0.2)_1px,transparent_1px),linear-gradient(90deg,rgba(74,222,128,0.2)_1px,transparent_1px)] bg-[size:18px_18px]" />
   </div>
 
-  <div className="relative z-10 space-y-4">
+  <div className="relative z-10 space-y-3">
 
 {/* Remote */}
 <div className="flex items-center justify-between">
@@ -428,7 +428,7 @@ export default function Contact() {
 
   </span>
 
-  <span className="text-cyan-400 text-sm font-mono">
+  <span className="text-orange-400 text-sm font-mono">
     GMT +5:30
   </span>
 
@@ -470,7 +470,7 @@ export default function Contact() {
 
       <motion.div
         animate={{
-          x: ["-20%", "120%"],
+          x: ["-20%", "530%"],
         }}
         transition={{
           duration: 2.5,
@@ -482,7 +482,7 @@ export default function Contact() {
           top-0
           w-12
           h-px
-          bg-gradient-to-r
+          bg-linear-to-r
           from-transparent
           via-green-400
           to-transparent
@@ -524,7 +524,7 @@ export default function Contact() {
         opacity: [0.5, 1, 0.5],
       }}
       transition={{
-        duration: 2,
+        duration: 1,
         repeat: Infinity,
       }}
       className="
@@ -565,134 +565,179 @@ export default function Contact() {
                       NETWORK
                     </p>
 
-<div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+<div className="grid grid-cols-3 gap-2">
 
   {/* GitHub */}
-  <a
-    href="https://github.com/hackdbykvl"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="
-      group
-      flex
-      flex-col
-      items-center
-      justify-center
-      h-[120px]
-      rounded-3xl
-      border
-      border-green-400/10
-      bg-green-400/[0.03]
-      hover:border-green-400/40
-      hover:bg-green-400/[0.06]
-      transition-all
-      duration-300
-      hover:-translate-y-1
-    "
-  >
-    <FaGithub
-      size={42}
-      className="
-        text-green-400
-        mb-3
-        transition-transform
-        duration-300
-        group-hover:scale-110
-      "
-    />
+<motion.a whileHover={{
+  y: -3,
+  scale: 1.03,
+}}
 
-    <h4 className="text-white font-bold">
-      GitHub
-    </h4>
+whileTap={{
+  scale: 0.98,
+}}
+  href="https://github.com/hackdbykvl"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="
+    group
+    flex
+    flex-col
+    items-center
+    justify-center
+    text-center
+    gap-1
+    rounded-2xl
+    border
+    border-green-400/10
+    bg-green-400/[0.03]
+    py-3
+    px-2
+    hover:border-green-400/40
+    hover:bg-green-400/[0.06]
+    transition-all
+  "
+>
+<motion.div
+  animate={{
+    y: [0, -3, 0],
+    scale: [1, 1.08, 1],
+  }}
+  transition={{
+    duration: 1,
+    repeat: Infinity,
+    ease: "easeInOut",
+  }}
+>
+  <FaGithub
+    size={18}
+    className="text-green-400"
+  />
+</motion.div>
 
-    <p className="text-green-400/70 text-xs mt-1">
-      Security Projects
-    </p>
-  </a>
+  <span className="text-xs font-semibold text-white">
+    GitHub
+  </span>
+
+  <span className="text-[10px] text-green-400/70">
+    Projects
+  </span> 
+</motion.a>
+
 
   {/* LinkedIn */}
-  <a
-    href="https://www.linkedin.com/in/keval-brahmbhatt-108a49121"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="
-      group
-      flex
-      flex-col
-      items-center
-      justify-center
-      h-[120px]
-      rounded-3xl
-      border
-      border-cyan-400/10
-      bg-cyan-400/[0.03]
-      hover:border-cyan-400/40
-      hover:bg-cyan-400/[0.06]
-      transition-all
-      duration-300
-      hover:-translate-y-1
-    "
-  >
-    <FaLinkedin
-      size={42}
-      className="
-        text-cyan-400
-        mb-3
-        transition-transform
-        duration-300
-        group-hover:scale-110
-      "
-    />
+<motion.a
+whileHover={{
+  y: -3,
+  scale: 1.03,
+}}
 
-    <h4 className="text-white font-bold">
-      LinkedIn
-    </h4>
+whileTap={{
+  scale: 0.98,
+}}
+  href="https://www.linkedin.com/in/keval-brahmbhatt-108a49121"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="
+    group
+    flex
+    flex-col
+    items-center
+    justify-center
+    text-center
+    gap-1
+    rounded-2xl
+    border
+    border-cyan-400/10
+    bg-cyan-400/3
+    py-3
+    px-2
+    hover:border-cyan-400/40
+    hover:bg-cyan-400/6
+    transition-all
+  "
+>
+<motion.div
+  animate={{
+    y: [0, -3, 0],
+    scale: [1, 1.08, 1],
+  }}
+  transition={{
+    duration: 1,
+    repeat: Infinity,
+    ease: "easeInOut",
+  }}
+>
+  <FaLinkedin
+    size={18}
+    className="text-cyan-400"
+  />
+</motion.div>
 
-    <p className="text-cyan-400/70 text-xs mt-1">
-      Professional Profile
-    </p>
-  </a>
+  <span className="text-xs font-semibold text-white">
+    LinkedIn
+  </span>
+
+  <span className="text-[10px] text-cyan-400/70">
+    Profile
+  </span>
+</motion.a>
 
   {/* Email */}
-  <a
-    href="mailto:Namahindia9@gmail.com"
-    className="
-      group
-      flex
-      flex-col
-      items-center
-      justify-center
-      h-[120px]
-      rounded-3xl
-      border
-      border-orange-400/10
-      bg-orange-400/[0.03]
-      hover:border-orange-400/40
-      hover:bg-orange-400/[0.06]
-      transition-all
-      duration-300
-      hover:-translate-y-1
-    "
-  >
-    <MdEmail
-      size={42}
-      className="
-        text-orange-400
-        mb-3
-        transition-transform
-        duration-300
-        group-hover:scale-110
-      "
-    />
+<motion.a
+whileHover={{
+  y: -3,
+  scale: 1.03,
+}}
 
-    <h4 className="text-white font-bold">
-      Email
-    </h4>
+whileTap={{
+  scale: 0.98,
+}}
+  href="mailto:Namahindia9@gmail.com"
+  className="
+    group
+    flex
+    flex-col
+    items-center
+    justify-center
+    text-center
+    gap-1
+    rounded-2xl
+    border
+    border-orange-400/10
+    bg-orange-400/[0.03]
+    py-3
+    px-2
+    hover:border-orange-400/40
+    hover:bg-orange-400/[0.06]
+    transition-all
+  "
+>
+<motion.div
+  animate={{
+    y: [0, -3, 0],
+    scale: [1, 1.08, 1],
+  }}
+  transition={{
+    duration: 1,
+    repeat: Infinity,
+    ease: "easeInOut",
+  }}
+>
+<MdEmail
+  size={18}
+  className="text-orange-400"
+/>
+</motion.div>
 
-    <p className="text-orange-400/70 text-xs mt-1">
-      Secure Contact
-    </p>
-  </a>
+  <span className="text-xs font-semibold text-white">
+    Email
+  </span>
+
+  <span className="text-[10px] text-orange-400/70">
+    Contact
+  </span>
+</motion.a>
 
 </div>
                   </div>
