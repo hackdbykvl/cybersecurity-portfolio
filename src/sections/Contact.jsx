@@ -543,11 +543,17 @@ py-4
   </div>
 
   {/* Status */}
-<div className="grid grid-cols-3 items-center mt-3">
-
+<div
+  className="
+    mt-3
+    grid
+    grid-cols-3
+    items-center
+  "
+>
   <span
     className="
-      text-[9px]
+      text-[8px]
       sm:text-[10px]
       text-green-400/60
       font-mono
@@ -558,40 +564,48 @@ py-4
     INDIA NODE
   </span>
 
-  <motion.span
-    animate={{
-      opacity: [0.5, 1, 0.5],
-    }}
-    transition={{
-      duration: 1,
-      repeat: Infinity,
-    }}
-    className="
-      text-[9px]
-      sm:text-[10px]
-      text-cyan-400
-      font-mono
-      tracking-wider
-      text-center
-      whitespace-nowrap
-    "
-  >
+{/* SECURE TUNNEL ACTIVE */}
+<motion.span
+  animate={{
+    opacity: [0.5, 1, 0.5],
+  }}
+  transition={{
+    duration: 1,
+    repeat: Infinity,
+  }}
+  className="
+    text-[8px]
+    sm:text-[10px]
+    text-cyan-400
+    font-mono
+    tracking-wider
+    text-center
+    whitespace-nowrap
+  "
+>
+  <span className="sm:hidden">
     SECURE TUNNEL
-  </motion.span>
+  </span>
+
+  <span className="hidden sm:inline">
+    SECURE TUNNEL ACTIVE
+  </span>
+</motion.span>
 
   <span
     className="
-      text-[9px]
+      text-[8px]
       sm:text-[10px]
       text-green-400/60
       font-mono
       tracking-wider
       text-right
+      sm:text-right
+      text-center
     "
   >
     REMOTE NODE
   </span>
-
 </div>
 
 </div>
