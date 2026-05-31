@@ -14,7 +14,7 @@ import {
 export default function Contact() {
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
-  const [error, setError] = useState(null);
+  const [error, setError] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -87,7 +87,7 @@ export default function Contact() {
         id="contact"
         className="
           relative
-          max-w-7xl
+          max-w-[1450px]
           mx-auto
           px-4
           sm:px-6
@@ -127,6 +127,7 @@ export default function Contact() {
           <motion.div
             animate={{
               x: ["-100%", "120%"],
+              opacity: [0.2, 1, 0.2],
             }}
             transition={{
               duration: 10,
@@ -199,7 +200,7 @@ export default function Contact() {
            <div
   className="
     grid
-    lg:grid-cols-[0.75fr_1.25fr]
+   lg:grid-cols-[0.85fr_1.15fr]
     gap-6
     lg:gap-8
     items-start
@@ -254,11 +255,11 @@ py-4
     rounded-2xl
     border
     border-green-400/10
-    bg-white/[0.02]
+    bg-white/2
     backdrop-blur-xl
     p-4
     sm:p-5
-    space-y-5
+    space-y-6
   "
 >
                   <div>
@@ -295,7 +296,7 @@ py-4
       y: ["-100%", "250%"],
     }}
     transition={{
-      duration: 4,
+      duration: 3,
       repeat: Infinity,
       ease: "linear",
     }}
@@ -304,7 +305,7 @@ py-4
       left-0
       w-full
       h-px
-      bg-green-400/30
+      bg-green-400/60
       blur-sm
     "
   />
@@ -565,12 +566,13 @@ py-4
                       NETWORK
                     </p>
 
-<div className="grid grid-cols-3 gap-2">
+<div className="grid grid-cols-3 gap-3">
 
   {/* GitHub */}
 <motion.a whileHover={{
-  y: -3,
-  scale: 1.03,
+  y: -6,
+  scale: 1.05,
+  boxShadow: "0 0 25px rgba(74,222,128,0.25)",
 }}
 
 whileTap={{
@@ -591,8 +593,7 @@ whileTap={{
     border
     border-green-400/10
     bg-green-400/[0.03]
-    py-3
-    px-2
+py-4 px-3 min-h-[90px]
     hover:border-green-400/40
     hover:bg-green-400/[0.06]
     transition-all
@@ -604,7 +605,7 @@ whileTap={{
     scale: [1, 1.08, 1],
   }}
   transition={{
-    duration: 1,
+    duration: 2,
     repeat: Infinity,
     ease: "easeInOut",
   }}
@@ -628,8 +629,9 @@ whileTap={{
   {/* LinkedIn */}
 <motion.a
 whileHover={{
-  y: -3,
-  scale: 1.03,
+  y: -6,
+  scale: 1.05,
+boxShadow: "0 0 25px rgba(34,211,238,0.25)"
 }}
 
 whileTap={{
@@ -650,8 +652,7 @@ whileTap={{
     border
     border-cyan-400/10
     bg-cyan-400/3
-    py-3
-    px-2
+py-4 px-3 min-h-[90px]
     hover:border-cyan-400/40
     hover:bg-cyan-400/6
     transition-all
@@ -663,7 +664,7 @@ whileTap={{
     scale: [1, 1.08, 1],
   }}
   transition={{
-    duration: 1,
+    duration: 2,
     repeat: Infinity,
     ease: "easeInOut",
   }}
@@ -686,8 +687,9 @@ whileTap={{
   {/* Email */}
 <motion.a
 whileHover={{
-  y: -3,
-  scale: 1.03,
+  y: -6,
+  scale: 1.05,
+boxShadow: "0 0 25px rgba(251,146,60,0.25)"
 }}
 
 whileTap={{
@@ -706,8 +708,7 @@ whileTap={{
     border
     border-orange-400/10
     bg-orange-400/[0.03]
-    py-3
-    px-2
+py-4 px-3 min-h-[90px]
     hover:border-orange-400/40
     hover:bg-orange-400/[0.06]
     transition-all
@@ -719,7 +720,7 @@ whileTap={{
     scale: [1, 1.08, 1],
   }}
   transition={{
-    duration: 1,
+    duration: 2,
     repeat: Infinity,
     ease: "easeInOut",
   }}
@@ -747,7 +748,17 @@ whileTap={{
               {/* FORM */}
               <form
                 onSubmit={handleSubmit}
-                className="space-y-5"
+                className="
+space-y-5
+rounded-3xl
+border
+border-green-400/10
+bg-white/[0.02]
+backdrop-blur-xl
+p-5
+sm:p-6
+lg:p-7
+"
               >
                 {/* Spam Protection */}
                 <input
