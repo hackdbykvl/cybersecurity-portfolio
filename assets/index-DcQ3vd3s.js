@@ -507,28 +507,35 @@ py-4\r
     bg-orange-400\r
     relative\r
     z-10\r
-  `})]}),(0,V.jsxs)(`div`,{className:`grid grid-cols-3 items-center mt-3`,children:[(0,V.jsx)(`span`,{className:`\r
-      text-[9px]\r
+  `})]}),(0,V.jsxs)(`div`,{className:`\r
+    mt-3\r
+    grid\r
+    grid-cols-3\r
+    items-center\r
+  `,children:[(0,V.jsx)(`span`,{className:`\r
+      text-[8px]\r
       sm:text-[10px]\r
       text-green-400/60\r
       font-mono\r
       tracking-wider\r
       text-left\r
-    `,children:`INDIA NODE`}),(0,V.jsx)(X.span,{animate:{opacity:[.5,1,.5]},transition:{duration:1,repeat:1/0},className:`\r
-      text-[9px]\r
-      sm:text-[10px]\r
-      text-cyan-400\r
-      font-mono\r
-      tracking-wider\r
-      text-center\r
-      whitespace-nowrap\r
-    `,children:`SECURE TUNNEL`}),(0,V.jsx)(`span`,{className:`\r
-      text-[9px]\r
+    `,children:`INDIA NODE`}),(0,V.jsxs)(X.span,{animate:{opacity:[.5,1,.5]},transition:{duration:1,repeat:1/0},className:`\r
+    text-[8px]\r
+    sm:text-[10px]\r
+    text-cyan-400\r
+    font-mono\r
+    tracking-wider\r
+    text-center\r
+    whitespace-nowrap\r
+  `,children:[(0,V.jsx)(`span`,{className:`sm:hidden`,children:`SECURE TUNNEL`}),(0,V.jsx)(`span`,{className:`hidden sm:inline`,children:`SECURE TUNNEL ACTIVE`})]}),(0,V.jsx)(`span`,{className:`\r
+      text-[8px]\r
       sm:text-[10px]\r
       text-green-400/60\r
       font-mono\r
       tracking-wider\r
       text-right\r
+      sm:text-right\r
+      text-center\r
     `,children:`REMOTE NODE`})]})]})]})]})]}),(0,V.jsxs)(`div`,{children:[(0,V.jsx)(`p`,{className:`\r
                         text-green-400/60\r
                         text-[10px]\r
