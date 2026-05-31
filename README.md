@@ -1,3 +1,8 @@
+![React](https://img.shields.io/badge/React-18-blue)
+![Vite](https://img.shields.io/badge/Vite-5-purple)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3-cyan)
+![Cybersecurity](https://img.shields.io/badge/Cybersecurity-Consultant-green)
+![ISO27001](https://img.shields.io/badge/ISO27001-Compliance-success)
 # Hackedbykvl.github.io
 
 # Cybersecurity Consultant Portfolio
