@@ -332,9 +332,9 @@ Error generating stack: `+e.message+`
                   font-mono\r
                   mt-auto\r
                   pt-4\r
-                `,children:[(0,V.jsx)(`div`,{className:`w-2 h-2 rounded-full bg-green-400/40`}),`OPERATIONAL SYSTEM`]})]})]},e.title))})]})})}var Vd={color:void 0,size:void 0,className:void 0,style:void 0,attr:void 0},Hd=S.createContext&&S.createContext(Vd),Ud=[`attr`,`size`,`title`];function Wd(e,t){if(e==null)return{};var n,r,i=Gd(e,t);if(Object.getOwnPropertySymbols){var a=Object.getOwnPropertySymbols(e);for(r=0;r<a.length;r++)n=a[r],t.indexOf(n)===-1&&{}.propertyIsEnumerable.call(e,n)&&(i[n]=e[n])}return i}function Gd(e,t){if(e==null)return{};var n={};for(var r in e)if({}.hasOwnProperty.call(e,r)){if(t.indexOf(r)!==-1)continue;n[r]=e[r]}return n}function Kd(){return Kd=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)({}).hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},Kd.apply(null,arguments)}function qd(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter(function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable})),n.push.apply(n,r)}return n}function Jd(e){for(var t=1;t<arguments.length;t++){var n=arguments[t]==null?{}:arguments[t];t%2?qd(Object(n),!0).forEach(function(t){Yd(e,t,n[t])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):qd(Object(n)).forEach(function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(n,t))})}return e}function Yd(e,t,n){return(t=Xd(t))in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function Xd(e){var t=Zd(e,`string`);return typeof t==`symbol`?t:t+``}function Zd(e,t){if(typeof e!=`object`||!e)return e;var n=e[Symbol.toPrimitive];if(n!==void 0){var r=n.call(e,t||`default`);if(typeof r!=`object`)return r;throw TypeError(`@@toPrimitive must return a primitive value.`)}return(t===`string`?String:Number)(e)}function Qd(e){return e&&e.map((e,t)=>S.createElement(e.tag,Jd({key:t},e.attr),Qd(e.child)))}function $d(e){return t=>S.createElement(ef,Kd({attr:Jd({},e.attr)},t),Qd(e.child))}function ef(e){var t=t=>{var{attr:n,size:r,title:i}=e,a=Wd(e,Ud),o=r||t.size||`1em`,s;return t.className&&(s=t.className),e.className&&(s=(s?s+` `:``)+e.className),S.createElement(`svg`,Kd({stroke:`currentColor`,fill:`currentColor`,strokeWidth:`0`},t.attr,n,a,{className:s,style:Jd(Jd({color:e.color||t.color},t.style),e.style),height:o,width:o,xmlns:`http://www.w3.org/2000/svg`}),i&&S.createElement(`title`,null,i),e.children)};return Hd===void 0?t(Vd):S.createElement(Hd.Consumer,null,e=>t(e))}function tf(e){return $d({tag:`svg`,attr:{viewBox:`0 0 448 512`},child:[{tag:`path`,attr:{d:`M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z`},child:[]}]})(e)}function nf(e){return $d({tag:`svg`,attr:{viewBox:`0 0 496 512`},child:[{tag:`path`,attr:{d:`M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z`},child:[]}]})(e)}function rf(e){return $d({tag:`svg`,attr:{viewBox:`0 0 24 24`},child:[{tag:`path`,attr:{fill:`none`,d:`M0 0h24v24H0z`},child:[]},{tag:`path`,attr:{d:`M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z`},child:[]}]})(e)}function af(){let[e,t]=(0,S.useState)(!1),[n,r]=(0,S.useState)(!1),[i,a]=(0,S.useState)(null);return(0,V.jsx)(jd,{delay:.2,children:(0,V.jsxs)(`section`,{id:`contact`,className:`\r
+                `,children:[(0,V.jsx)(`div`,{className:`w-2 h-2 rounded-full bg-green-400/40`}),`OPERATIONAL SYSTEM`]})]})]},e.title))})]})})}var Vd={color:void 0,size:void 0,className:void 0,style:void 0,attr:void 0},Hd=S.createContext&&S.createContext(Vd),Ud=[`attr`,`size`,`title`];function Wd(e,t){if(e==null)return{};var n,r,i=Gd(e,t);if(Object.getOwnPropertySymbols){var a=Object.getOwnPropertySymbols(e);for(r=0;r<a.length;r++)n=a[r],t.indexOf(n)===-1&&{}.propertyIsEnumerable.call(e,n)&&(i[n]=e[n])}return i}function Gd(e,t){if(e==null)return{};var n={};for(var r in e)if({}.hasOwnProperty.call(e,r)){if(t.indexOf(r)!==-1)continue;n[r]=e[r]}return n}function Kd(){return Kd=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)({}).hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},Kd.apply(null,arguments)}function qd(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter(function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable})),n.push.apply(n,r)}return n}function Jd(e){for(var t=1;t<arguments.length;t++){var n=arguments[t]==null?{}:arguments[t];t%2?qd(Object(n),!0).forEach(function(t){Yd(e,t,n[t])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):qd(Object(n)).forEach(function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(n,t))})}return e}function Yd(e,t,n){return(t=Xd(t))in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function Xd(e){var t=Zd(e,`string`);return typeof t==`symbol`?t:t+``}function Zd(e,t){if(typeof e!=`object`||!e)return e;var n=e[Symbol.toPrimitive];if(n!==void 0){var r=n.call(e,t||`default`);if(typeof r!=`object`)return r;throw TypeError(`@@toPrimitive must return a primitive value.`)}return(t===`string`?String:Number)(e)}function Qd(e){return e&&e.map((e,t)=>S.createElement(e.tag,Jd({key:t},e.attr),Qd(e.child)))}function $d(e){return t=>S.createElement(ef,Kd({attr:Jd({},e.attr)},t),Qd(e.child))}function ef(e){var t=t=>{var{attr:n,size:r,title:i}=e,a=Wd(e,Ud),o=r||t.size||`1em`,s;return t.className&&(s=t.className),e.className&&(s=(s?s+` `:``)+e.className),S.createElement(`svg`,Kd({stroke:`currentColor`,fill:`currentColor`,strokeWidth:`0`},t.attr,n,a,{className:s,style:Jd(Jd({color:e.color||t.color},t.style),e.style),height:o,width:o,xmlns:`http://www.w3.org/2000/svg`}),i&&S.createElement(`title`,null,i),e.children)};return Hd===void 0?t(Vd):S.createElement(Hd.Consumer,null,e=>t(e))}function tf(e){return $d({tag:`svg`,attr:{viewBox:`0 0 448 512`},child:[{tag:`path`,attr:{d:`M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z`},child:[]}]})(e)}function nf(e){return $d({tag:`svg`,attr:{viewBox:`0 0 496 512`},child:[{tag:`path`,attr:{d:`M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z`},child:[]}]})(e)}function rf(e){return $d({tag:`svg`,attr:{viewBox:`0 0 24 24`},child:[{tag:`path`,attr:{fill:`none`,d:`M0 0h24v24H0z`},child:[]},{tag:`path`,attr:{d:`M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z`},child:[]}]})(e)}function af(){let[e,t]=(0,S.useState)(!1),[n,r]=(0,S.useState)(!1),[i,a]=(0,S.useState)(``);return(0,V.jsx)(jd,{delay:.2,children:(0,V.jsxs)(`section`,{id:`contact`,className:`\r
           relative\r
-          max-w-7xl\r
+          max-w-[1450px]\r
           mx-auto\r
           px-4\r
           sm:px-6\r
@@ -350,7 +350,7 @@ Error generating stack: `+e.message+`
             border-green-400/10\r
             bg-[#050505]/90\r
             backdrop-blur-3xl\r
-          `,children:[(0,V.jsx)(`div`,{className:`absolute inset-0 opacity-[0.035]`,children:(0,V.jsx)(`div`,{className:`absolute inset-0 bg-[linear-gradient(rgba(74,222,128,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(74,222,128,0.08)_1px,transparent_1px)] bg-[size:40px_40px]`})}),(0,V.jsx)(`div`,{className:`absolute top-0 left-1/2 -translate-x-1/2 w-[500px] sm:w-[600px] h-[300px] sm:h-[400px] bg-green-400/[0.03] blur-3xl rounded-full`}),(0,V.jsx)(`div`,{className:`absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-green-400/30 to-transparent`}),(0,V.jsx)(X.div,{animate:{x:[`-100%`,`120%`]},transition:{duration:10,repeat:1/0,ease:`linear`},className:`absolute top-0 w-1/3 h-px bg-gradient-to-r from-transparent via-green-400/40 to-transparent blur-sm`}),(0,V.jsxs)(`div`,{className:`relative z-10 p-6 sm:p-8 md:p-12 lg:p-14`,children:[(0,V.jsxs)(`div`,{className:`max-w-3xl mb-12 sm:mb-16`,children:[(0,V.jsxs)(`div`,{className:`\r
+          `,children:[(0,V.jsx)(`div`,{className:`absolute inset-0 opacity-[0.035]`,children:(0,V.jsx)(`div`,{className:`absolute inset-0 bg-[linear-gradient(rgba(74,222,128,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(74,222,128,0.08)_1px,transparent_1px)] bg-[size:40px_40px]`})}),(0,V.jsx)(`div`,{className:`absolute top-0 left-1/2 -translate-x-1/2 w-[500px] sm:w-[600px] h-[300px] sm:h-[400px] bg-green-400/[0.03] blur-3xl rounded-full`}),(0,V.jsx)(`div`,{className:`absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-green-400/30 to-transparent`}),(0,V.jsx)(X.div,{animate:{x:[`-100%`,`120%`],opacity:[.2,1,.2]},transition:{duration:10,repeat:1/0,ease:`linear`},className:`absolute top-0 w-1/3 h-px bg-gradient-to-r from-transparent via-green-400/40 to-transparent blur-sm`}),(0,V.jsxs)(`div`,{className:`relative z-10 p-6 sm:p-8 md:p-12 lg:p-14`,children:[(0,V.jsxs)(`div`,{className:`max-w-3xl mb-12 sm:mb-16`,children:[(0,V.jsxs)(`div`,{className:`\r
                   inline-flex\r
                   items-center\r
                   gap-3\r
@@ -381,7 +381,7 @@ Error generating stack: `+e.message+`
                   leading-relaxed\r
                 `,children:`Open for cybersecurity consulting, compliance systems, IT auditing, vulnerability assessments, and secure digital operations.`})]}),(0,V.jsxs)(`div`,{className:`\r
     grid\r
-    lg:grid-cols-[0.75fr_1.25fr]\r
+   lg:grid-cols-[0.85fr_1.15fr]\r
     gap-6\r
     lg:gap-8\r
     items-start\r
@@ -411,11 +411,11 @@ py-4\r
     rounded-2xl\r
     border\r
     border-green-400/10\r
-    bg-white/[0.02]\r
+    bg-white/2\r
     backdrop-blur-xl\r
     p-4\r
     sm:p-5\r
-    space-y-5\r
+    space-y-6\r
   `,children:[(0,V.jsxs)(`div`,{children:[(0,V.jsx)(`p`,{className:`\r
                         text-green-400/60\r
                         text-[10px]\r
@@ -431,12 +431,12 @@ py-4\r
     border-green-400/10\r
     bg-black/40\r
     p-3\r
-  `,children:[(0,V.jsx)(`div`,{className:`absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(74,222,128,0.08),transparent_70%)]`}),(0,V.jsx)(X.div,{animate:{y:[`-100%`,`250%`]},transition:{duration:4,repeat:1/0,ease:`linear`},className:`\r
+  `,children:[(0,V.jsx)(`div`,{className:`absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(74,222,128,0.08),transparent_70%)]`}),(0,V.jsx)(X.div,{animate:{y:[`-100%`,`250%`]},transition:{duration:3,repeat:1/0,ease:`linear`},className:`\r
       absolute\r
       left-0\r
       w-full\r
       h-px\r
-      bg-green-400/30\r
+      bg-green-400/60\r
       blur-sm\r
     `}),(0,V.jsx)(`div`,{className:`absolute inset-0 opacity-20`,children:(0,V.jsx)(`div`,{className:`absolute inset-0 bg-[linear-gradient(rgba(74,222,128,0.2)_1px,transparent_1px),linear-gradient(90deg,rgba(74,222,128,0.2)_1px,transparent_1px)] bg-[size:18px_18px]`})}),(0,V.jsxs)(`div`,{className:`relative z-10 space-y-3`,children:[(0,V.jsxs)(`div`,{className:`flex items-center justify-between`,children:[(0,V.jsx)(`div`,{className:`flex items-center gap-3`,children:(0,V.jsxs)(`span`,{className:`flex items-center gap-2`,children:[(0,V.jsxs)(X.span,{animate:{boxShadow:[`0 0 0px rgba(74,222,128,0)`,`0 0 8px rgba(74,222,128,0.5)`,`0 0 0px rgba(74,222,128,0)`]},transition:{duration:2,repeat:1/0},className:`\r
           relative\r
@@ -500,7 +500,7 @@ py-4\r
                         tracking-[0.35em]\r
                         font-mono\r
                         mb-3\r
-                      `,children:`NETWORK`}),(0,V.jsxs)(`div`,{className:`grid grid-cols-3 gap-2`,children:[(0,V.jsxs)(X.a,{whileHover:{y:-3,scale:1.03},whileTap:{scale:.98},href:`https://github.com/hackdbykvl`,target:`_blank`,rel:`noopener noreferrer`,className:`\r
+                      `,children:`NETWORK`}),(0,V.jsxs)(`div`,{className:`grid grid-cols-3 gap-3`,children:[(0,V.jsxs)(X.a,{whileHover:{y:-6,scale:1.05,boxShadow:`0 0 25px rgba(74,222,128,0.25)`},whileTap:{scale:.98},href:`https://github.com/hackdbykvl`,target:`_blank`,rel:`noopener noreferrer`,className:`\r
     group\r
     flex\r
     flex-col\r
@@ -512,12 +512,11 @@ py-4\r
     border\r
     border-green-400/10\r
     bg-green-400/[0.03]\r
-    py-3\r
-    px-2\r
+py-4 px-3 min-h-[90px]\r
     hover:border-green-400/40\r
     hover:bg-green-400/[0.06]\r
     transition-all\r
-  `,children:[(0,V.jsx)(X.div,{animate:{y:[0,-3,0],scale:[1,1.08,1]},transition:{duration:2,repeat:1/0,ease:`easeInOut`},children:(0,V.jsx)(nf,{size:18,className:`text-green-400`})}),(0,V.jsx)(`span`,{className:`text-xs font-semibold text-white`,children:`GitHub`}),(0,V.jsx)(`span`,{className:`text-[10px] text-green-400/70`,children:`Projects`})]}),(0,V.jsxs)(X.a,{whileHover:{y:-3,scale:1.03},whileTap:{scale:.98},href:`https://www.linkedin.com/in/keval-brahmbhatt-108a49121`,target:`_blank`,rel:`noopener noreferrer`,className:`\r
+  `,children:[(0,V.jsx)(X.div,{animate:{y:[0,-3,0],scale:[1,1.08,1]},transition:{duration:2,repeat:1/0,ease:`easeInOut`},children:(0,V.jsx)(nf,{size:18,className:`text-green-400`})}),(0,V.jsx)(`span`,{className:`text-xs font-semibold text-white`,children:`GitHub`}),(0,V.jsx)(`span`,{className:`text-[10px] text-green-400/70`,children:`Projects`})]}),(0,V.jsxs)(X.a,{whileHover:{y:-6,scale:1.05,boxShadow:`0 0 25px rgba(34,211,238,0.25)`},whileTap:{scale:.98},href:`https://www.linkedin.com/in/keval-brahmbhatt-108a49121`,target:`_blank`,rel:`noopener noreferrer`,className:`\r
     group\r
     flex\r
     flex-col\r
@@ -529,12 +528,11 @@ py-4\r
     border\r
     border-cyan-400/10\r
     bg-cyan-400/3\r
-    py-3\r
-    px-2\r
+py-4 px-3 min-h-[90px]\r
     hover:border-cyan-400/40\r
     hover:bg-cyan-400/6\r
     transition-all\r
-  `,children:[(0,V.jsx)(X.div,{animate:{y:[0,-3,0],scale:[1,1.08,1]},transition:{duration:2,repeat:1/0,ease:`easeInOut`},children:(0,V.jsx)(tf,{size:18,className:`text-cyan-400`})}),(0,V.jsx)(`span`,{className:`text-xs font-semibold text-white`,children:`LinkedIn`}),(0,V.jsx)(`span`,{className:`text-[10px] text-cyan-400/70`,children:`Profile`})]}),(0,V.jsxs)(X.a,{whileHover:{y:-3,scale:1.03},whileTap:{scale:.98},href:`mailto:Namahindia9@gmail.com`,className:`\r
+  `,children:[(0,V.jsx)(X.div,{animate:{y:[0,-3,0],scale:[1,1.08,1]},transition:{duration:2,repeat:1/0,ease:`easeInOut`},children:(0,V.jsx)(tf,{size:18,className:`text-cyan-400`})}),(0,V.jsx)(`span`,{className:`text-xs font-semibold text-white`,children:`LinkedIn`}),(0,V.jsx)(`span`,{className:`text-[10px] text-cyan-400/70`,children:`Profile`})]}),(0,V.jsxs)(X.a,{whileHover:{y:-6,scale:1.05,boxShadow:`0 0 25px rgba(251,146,60,0.25)`},whileTap:{scale:.98},href:`mailto:Namahindia9@gmail.com`,className:`\r
     group\r
     flex\r
     flex-col\r
@@ -546,12 +544,21 @@ py-4\r
     border\r
     border-orange-400/10\r
     bg-orange-400/[0.03]\r
-    py-3\r
-    px-2\r
+py-4 px-3 min-h-[90px]\r
     hover:border-orange-400/40\r
     hover:bg-orange-400/[0.06]\r
     transition-all\r
-  `,children:[(0,V.jsx)(X.div,{animate:{y:[0,-3,0],scale:[1,1.08,1]},transition:{duration:2,repeat:1/0,ease:`easeInOut`},children:(0,V.jsx)(rf,{size:18,className:`text-orange-400`})}),(0,V.jsx)(`span`,{className:`text-xs font-semibold text-white`,children:`Email`}),(0,V.jsx)(`span`,{className:`text-[10px] text-orange-400/70`,children:`Contact`})]})]})]})]})]}),(0,V.jsxs)(`form`,{onSubmit:async e=>{e.preventDefault(),t(!0),a(``),r(!1);let n=new FormData(e.target);n.append(`access_key`,`Enteryouaccesskey`),n.append(`subject`,`New Cybersecurity Portfolio Message`),n.append(`from_name`,`HACKDBYKVL Portfolio`);try{(await(await fetch(`https://api.web3forms.com/submit`,{method:`POST`,body:n})).json()).success?(r(!0),e.target.reset(),setTimeout(()=>{window.location.href=`https://hackdbykvl.github.io/cybersecurity-portfolio/`},2500)):a((0,V.jsxs)(V.Fragment,{children:[`Secure transmission failed. Report to`,` `,(0,V.jsx)(`a`,{href:`mailto:Namahindia9@gmail.com`,className:`text-green-400 underline hover:text-green-300`,children:`Namahindia9@gmail.com`})]}))}catch{a(`Network error. Please try again.`)}t(!1)},className:`space-y-5`,children:[(0,V.jsx)(`input`,{type:`checkbox`,name:`botcheck`,className:`hidden`,style:{display:`none`}}),(0,V.jsxs)(`div`,{className:`grid md:grid-cols-2 gap-5`,children:[(0,V.jsx)(`input`,{type:`text`,placeholder:`Name`,name:`name`,required:!0,autoComplete:`name`,minLength:2,"aria-label":`Your Name`,className:`\r
+  `,children:[(0,V.jsx)(X.div,{animate:{y:[0,-3,0],scale:[1,1.08,1]},transition:{duration:2,repeat:1/0,ease:`easeInOut`},children:(0,V.jsx)(rf,{size:18,className:`text-orange-400`})}),(0,V.jsx)(`span`,{className:`text-xs font-semibold text-white`,children:`Email`}),(0,V.jsx)(`span`,{className:`text-[10px] text-orange-400/70`,children:`Contact`})]})]})]})]})]}),(0,V.jsxs)(`form`,{onSubmit:async e=>{e.preventDefault(),t(!0),a(``),r(!1);let n=new FormData(e.target);n.append(`access_key`,`Enteryouaccesskey`),n.append(`subject`,`New Cybersecurity Portfolio Message`),n.append(`from_name`,`HACKDBYKVL Portfolio`);try{(await(await fetch(`https://api.web3forms.com/submit`,{method:`POST`,body:n})).json()).success?(r(!0),e.target.reset(),setTimeout(()=>{window.location.href=`https://hackdbykvl.github.io/cybersecurity-portfolio/`},2500)):a((0,V.jsxs)(V.Fragment,{children:[`Secure transmission failed. Report to`,` `,(0,V.jsx)(`a`,{href:`mailto:Namahindia9@gmail.com`,className:`text-green-400 underline hover:text-green-300`,children:`Namahindia9@gmail.com`})]}))}catch{a(`Network error. Please try again.`)}t(!1)},className:`\r
+space-y-5\r
+rounded-3xl\r
+border\r
+border-green-400/10\r
+bg-white/[0.02]\r
+backdrop-blur-xl\r
+p-5\r
+sm:p-6\r
+lg:p-7\r
+`,children:[(0,V.jsx)(`input`,{type:`checkbox`,name:`botcheck`,className:`hidden`,style:{display:`none`}}),(0,V.jsxs)(`div`,{className:`grid md:grid-cols-2 gap-5`,children:[(0,V.jsx)(`input`,{type:`text`,placeholder:`Name`,name:`name`,required:!0,autoComplete:`name`,minLength:2,"aria-label":`Your Name`,className:`\r
                       w-full\r
                       px-5\r
                       py-4\r
