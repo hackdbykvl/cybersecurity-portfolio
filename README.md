@@ -104,6 +104,7 @@ Includes:
 * Scanline Effects
 * Neon Security UI Elements
 * Animated Security Nodes
+* Secure Connection Tunnel
 
 ### Case Studies
 
