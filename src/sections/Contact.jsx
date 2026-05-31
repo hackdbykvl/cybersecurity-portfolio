@@ -2,6 +2,15 @@ import Reveal from "../components/Reveal";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
+import {
+  FaGithub,
+  FaLinkedin,
+} from "react-icons/fa";
+
+import {
+  MdEmail,
+} from "react-icons/md";
+
 export default function Contact() {
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
@@ -265,90 +274,126 @@ export default function Contact() {
                     >
                       LOCATION
                     </p>
+<div
+  className="
+    relative
+    overflow-hidden
+    rounded-2xl
+    border
+    border-green-400/10
+    bg-black/40
+    p-4
+  "
+>
 
-<p className="text-gray-300 text-sm sm:text-base flex flex-col gap-2">
+  {/* Radar Glow */}
+  <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(74,222,128,0.08),transparent_70%)]" />
 
-  {/* REMOTE */}
-  <span className="flex items-center gap-2">
+  {/* Scanning Line */}
+  <motion.div
+    animate={{
+      y: ["-100%", "250%"],
+    }}
+    transition={{
+      duration: 4,
+      repeat: Infinity,
+      ease: "linear",
+    }}
+    className="
+      absolute
+      left-0
+      w-full
+      h-px
+      bg-green-400/30
+      blur-sm
+    "
+  />
 
-    <motion.span
-      animate={{
-        boxShadow: [
-          "0 0 0px rgba(74,222,128,0)",
-          "0 0 8px rgba(74,222,128,0.5)",
-          "0 0 0px rgba(74,222,128,0)",
-        ],
-      }}
-      transition={{
-        duration: 2,
-        repeat: Infinity,
-      }}
-      className="
-        relative
-        inline-flex
-        items-center
-        justify-center
-        overflow-hidden
-        rounded-[2px]
-        border
-        border-white/10
-        w-5
-        h-3
-        bg-slate-900
-      "
-    >
+  {/* Mini Grid */}
+  <div className="absolute inset-0 opacity-20">
+    <div className="absolute inset-0 bg-[linear-gradient(rgba(74,222,128,0.2)_1px,transparent_1px),linear-gradient(90deg,rgba(74,222,128,0.2)_1px,transparent_1px)] bg-[size:18px_18px]" />
+  </div>
 
-      {/* Center Node */}
+  <div className="relative z-10 space-y-4">
+
+{/* Remote */}
+<div className="flex items-center justify-between">
+
+  <div className="flex items-center gap-3">
+
+    {/* YOUR REMOTE BADGE */}
+    <span className="flex items-center gap-2">
+
       <motion.span
         animate={{
-          scale: [1, 1.4, 1],
-          opacity: [0.7, 1, 0.7],
+          boxShadow: [
+            "0 0 0px rgba(74,222,128,0)",
+            "0 0 8px rgba(74,222,128,0.5)",
+            "0 0 0px rgba(74,222,128,0)",
+          ],
         }}
         transition={{
-          duration: 1.5,
+          duration: 2,
           repeat: Infinity,
         }}
         className="
-          absolute
-          w-[3px]
-          h-[3px]
-          rounded-full
-          bg-green-400
+          relative
+          inline-flex
+          items-center
+          justify-center
+          overflow-hidden
+          rounded-[2px]
+          border
+          border-white/10
+          w-5
+          h-3
+          bg-slate-900
         "
-      />
+      >
+        <motion.span
+          animate={{
+            scale: [1, 1.4, 1],
+            opacity: [0.7, 1, 0.7],
+          }}
+          transition={{
+            duration: 1.5,
+            repeat: Infinity,
+          }}
+          className="
+            absolute
+            w-[3px]
+            h-[3px]
+            rounded-full
+            bg-green-400
+          "
+        />
 
-      {/* Nodes */}
-      <span className="absolute left-[2px] top-[2px] w-[2px] h-[2px] rounded-full bg-cyan-400"></span>
+        <span className="absolute left-[2px] top-[2px] w-[2px] h-[2px] rounded-full bg-cyan-400"></span>
+        <span className="absolute right-[2px] top-[2px] w-[2px] h-[2px] rounded-full bg-cyan-400"></span>
+        <span className="absolute left-[2px] bottom-[2px] w-[2px] h-[2px] rounded-full bg-cyan-400"></span>
 
-      <span className="absolute right-[2px] top-[2px] w-[2px] h-[2px] rounded-full bg-cyan-400"></span>
+        <span className="absolute left-[5px] top-[3px] w-[4px] h-px bg-green-400/70"></span>
+        <span className="absolute right-[5px] top-[3px] w-[4px] h-px bg-green-400/70"></span>
+        <span className="absolute left-[5px] bottom-[3px] w-[4px] h-px bg-green-400/70"></span>
+      </motion.span>
 
-      <span className="absolute left-[2px] bottom-[2px] w-[2px] h-[2px] rounded-full bg-cyan-400"></span>
+      <span className="text-green-400 font-semibold">
+        REMOTE OPERATIONS
+      </span>
 
-      {/* Connections */}
-      <span className="absolute left-[5px] top-[3px] w-[4px] h-px bg-green-400/70"></span>
+    </span>
 
-      <span className="absolute right-[5px] top-[3px] w-[4px] h-px bg-green-400/70"></span>
+  </div>
 
-      <span className="absolute left-[5px] bottom-[3px] w-[4px] h-px bg-green-400/70"></span>
-
-    </motion.span>
-
-    <motion.span
-      animate={{
-        opacity: [0.75, 1, 0.75],
-      }}
-      transition={{
-        duration: 2,
-        repeat: Infinity,
-      }}
-    >
-      <span className="text-cyan-400 font-semibold">R</span>
-      <span className="text-green-400 font-semibold">EMOTE</span>
-    </motion.span>
-
+  <span className="text-xs text-green-400/60 font-mono">
+    ONLINE
   </span>
 
-  {/* INDIA */}
+</div>
+
+{/* IND */}
+<div className="flex items-center justify-between">
+
   <span className="flex items-center gap-2">
 
     <motion.span
@@ -358,7 +403,6 @@ export default function Contact() {
       transition={{
         duration: 3,
         repeat: Infinity,
-        ease: "easeInOut",
       }}
       className="
         inline-flex
@@ -369,7 +413,6 @@ export default function Contact() {
         border-white/10
         w-5
         h-3
-        shadow-sm
       "
     >
       <span className="flex-1 bg-orange-400"></span>
@@ -377,23 +420,135 @@ export default function Contact() {
       <span className="flex-1 bg-green-400"></span>
     </motion.span>
 
-    <motion.span
-      animate={{
-        opacity: [0.8, 1, 0.8],
-      }}
-      transition={{
-        duration: 2.5,
-        repeat: Infinity,
-      }}
-    >
-      <span className="text-orange-400 font-semibold">I</span>
-      <span className="text-white font-semibold">N</span>
-      <span className="text-green-400 font-semibold">D</span>
-    </motion.span>
+    <span className="font-semibold">
+      <span className="text-orange-400">I</span>
+      <span className="text-white">N</span>
+      <span className="text-green-400">D</span>
+    </span>
 
   </span>
 
-</p>
+  <span className="text-cyan-400 text-sm font-mono">
+    GMT +5:30
+  </span>
+
+</div>
+
+
+
+{/* Secure Connection Tunnel */}
+<div className="relative py-2">
+
+  {/* Connection Line */}
+  <div className="relative flex items-center justify-between">
+
+    {/* India Node */}
+    <motion.div
+      animate={{
+        boxShadow: [
+          "0 0 0px rgba(74,222,128,0.3)",
+          "0 0 18px rgba(74,222,128,0.8)",
+          "0 0 0px rgba(74,222,128,0.3)",
+        ],
+      }}
+      transition={{
+        duration: 2,
+        repeat: Infinity,
+      }}
+      className="
+        w-3
+        h-3
+        rounded-full
+        bg-green-400
+        relative
+        z-10
+      "
+    />
+
+    {/* Tunnel */}
+    <div className="absolute left-2 right-2 h-px bg-green-400/20 overflow-hidden">
+
+      <motion.div
+        animate={{
+          x: ["-20%", "120%"],
+        }}
+        transition={{
+          duration: 2.5,
+          repeat: Infinity,
+          ease: "linear",
+        }}
+        className="
+          absolute
+          top-0
+          w-12
+          h-px
+          bg-gradient-to-r
+          from-transparent
+          via-green-400
+          to-transparent
+        "
+      />
+
+    </div>
+
+    {/* Remote Node */}
+    <motion.div
+      animate={{
+        scale: [1, 1.25, 1],
+      }}
+      transition={{
+        duration: 1.8,
+        repeat: Infinity,
+      }}
+      className="
+        w-3
+        h-3
+        rounded-full
+        bg-cyan-400
+        relative
+        z-10
+      "
+    />
+
+  </div>
+
+  {/* Status */}
+  <div className="flex justify-between mt-3">
+
+    <span className="text-[10px] text-green-400/60 font-mono tracking-wider">
+      INDIA NODE
+    </span>
+
+    <motion.span
+      animate={{
+        opacity: [0.5, 1, 0.5],
+      }}
+      transition={{
+        duration: 2,
+        repeat: Infinity,
+      }}
+      className="
+        text-[10px]
+        text-cyan-400
+        font-mono
+        tracking-wider
+      "
+    >
+      SECURE TUNNEL ACTIVE
+    </motion.span>
+
+    <span className="text-[10px] text-green-400/60 font-mono tracking-wider">
+      REMOTE NODE
+    </span>
+
+  </div>
+
+</div>
+
+  </div>
+
+</div>
+
                   </div>
 
                   <div>
@@ -410,83 +565,135 @@ export default function Contact() {
                       NETWORK
                     </p>
 
-<div className="flex flex-wrap gap-3 sm:gap-4">
+<div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+
+  {/* GitHub */}
   <a
     href="https://github.com/hackdbykvl"
     target="_blank"
     rel="noopener noreferrer"
     className="
-      px-4
-      sm:px-5
-      py-3
-      rounded-2xl
+      group
+      flex
+      flex-col
+      items-center
+      justify-center
+      h-[120px]
+      rounded-3xl
       border
       border-green-400/10
       bg-green-400/[0.03]
-      text-green-400/70
-      text-xs
-      sm:text-sm
-      tracking-[0.25em]
+      hover:border-green-400/40
+      hover:bg-green-400/[0.06]
       transition-all
       duration-300
-      hover:border-green-400/30
-      hover:text-green-300
-      hover:bg-green-400/[0.05]
+      hover:-translate-y-1
     "
   >
-    GITHUB
+    <FaGithub
+      size={42}
+      className="
+        text-green-400
+        mb-3
+        transition-transform
+        duration-300
+        group-hover:scale-110
+      "
+    />
+
+    <h4 className="text-white font-bold">
+      GitHub
+    </h4>
+
+    <p className="text-green-400/70 text-xs mt-1">
+      Security Projects
+    </p>
   </a>
 
+  {/* LinkedIn */}
   <a
     href="https://www.linkedin.com/in/keval-brahmbhatt-108a49121"
     target="_blank"
     rel="noopener noreferrer"
     className="
-      px-4
-      sm:px-5
-      py-3
-      rounded-2xl
+      group
+      flex
+      flex-col
+      items-center
+      justify-center
+      h-[120px]
+      rounded-3xl
       border
-      border-green-400/10
-      bg-green-400/[0.03]
-      text-green-400/70
-      text-xs
-      sm:text-sm
-      tracking-[0.25em]
+      border-cyan-400/10
+      bg-cyan-400/[0.03]
+      hover:border-cyan-400/40
+      hover:bg-cyan-400/[0.06]
       transition-all
       duration-300
-      hover:border-green-400/30
-      hover:text-green-300
-      hover:bg-green-400/[0.05]
+      hover:-translate-y-1
     "
   >
-    LINKEDIN
+    <FaLinkedin
+      size={42}
+      className="
+        text-cyan-400
+        mb-3
+        transition-transform
+        duration-300
+        group-hover:scale-110
+      "
+    />
+
+    <h4 className="text-white font-bold">
+      LinkedIn
+    </h4>
+
+    <p className="text-cyan-400/70 text-xs mt-1">
+      Professional Profile
+    </p>
   </a>
-    <a
+
+  {/* Email */}
+  <a
     href="mailto:Namahindia9@gmail.com"
-    target="_blank"
-    rel="noopener noreferrer"
     className="
-      px-4
-      sm:px-5
-      py-3
-      rounded-2xl
+      group
+      flex
+      flex-col
+      items-center
+      justify-center
+      h-[120px]
+      rounded-3xl
       border
-      border-green-400/10
-      bg-green-400/[0.03]
-      text-green-400/70
-      text-xs
-      sm:text-sm
-      tracking-[0.25em]
+      border-orange-400/10
+      bg-orange-400/[0.03]
+      hover:border-orange-400/40
+      hover:bg-orange-400/[0.06]
       transition-all
       duration-300
-      hover:border-green-400/30
-      hover:text-green-300
-      hover:bg-green-400/[0.05]
+      hover:-translate-y-1
     "
   >
-    EMAIL
+    <MdEmail
+      size={42}
+      className="
+        text-orange-400
+        mb-3
+        transition-transform
+        duration-300
+        group-hover:scale-110
+      "
+    />
+
+    <h4 className="text-white font-bold">
+      Email
+    </h4>
+
+    <p className="text-orange-400/70 text-xs mt-1">
+      Secure Contact
+    </p>
   </a>
+
 </div>
                   </div>
                 </div>
