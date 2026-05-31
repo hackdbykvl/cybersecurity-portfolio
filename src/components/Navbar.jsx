@@ -28,7 +28,7 @@ export default function Navbar() {
 
         <div className="min-w-0">
           <h1 className="text-sm md:text-xl font-black tracking-[0.18em] text-white">
-            KEVAL <span className="text-green-400">BRAHMBHATT</span>
+            KEVAL <span className="text-green-400">BRAHMBHATT...</span>
           </h1>
 
           <p className="text-[10px] md:text-[11px] tracking-[0.35em] text-green-400/60 uppercase">
