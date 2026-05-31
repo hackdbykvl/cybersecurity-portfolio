@@ -438,7 +438,7 @@ py-4\r
       h-px\r
       bg-green-400/60\r
       blur-sm\r
-    `}),(0,V.jsx)(`div`,{className:`absolute inset-0 opacity-20`,children:(0,V.jsx)(`div`,{className:`absolute inset-0 bg-[linear-gradient(rgba(74,222,128,0.2)_1px,transparent_1px),linear-gradient(90deg,rgba(74,222,128,0.2)_1px,transparent_1px)] bg-[size:18px_18px]`})}),(0,V.jsxs)(`div`,{className:`relative z-10 space-y-3`,children:[(0,V.jsxs)(`div`,{className:`flex items-center justify-between`,children:[(0,V.jsx)(`div`,{className:`flex items-center gap-3`,children:(0,V.jsxs)(`span`,{className:`flex items-center gap-2`,children:[(0,V.jsxs)(X.span,{animate:{boxShadow:[`0 0 0px rgba(74,222,128,0)`,`0 0 8px rgba(74,222,128,0.5)`,`0 0 0px rgba(74,222,128,0)`]},transition:{duration:2,repeat:1/0},className:`\r
+    `}),(0,V.jsx)(`div`,{className:`absolute inset-0 opacity-20`,children:(0,V.jsx)(`div`,{className:`absolute inset-0 bg-[linear-gradient(rgba(74,222,128,0.2)_1px,transparent_1px),linear-gradient(90deg,rgba(74,222,128,0.2)_1px,transparent_1px)] bg-[size:18px_18px]`})}),(0,V.jsxs)(`div`,{className:`relative z-10 space-y-3 text-sm`,children:[(0,V.jsxs)(`div`,{className:`flex items-center justify-between`,children:[(0,V.jsx)(`div`,{className:`flex items-center gap-2 min-w-0`,children:(0,V.jsxs)(`span`,{className:`flex items-center gap-2 min-w-0`,children:[(0,V.jsxs)(X.span,{animate:{boxShadow:[`0 0 0px rgba(74,222,128,0)`,`0 0 8px rgba(74,222,128,0.5)`,`0 0 0px rgba(74,222,128,0)`]},transition:{duration:2,repeat:1/0},className:`\r
           relative\r
           inline-flex\r
           items-center\r
@@ -456,7 +456,20 @@ py-4\r
             h-[3px]\r
             rounded-full\r
             bg-green-400\r
-          `}),(0,V.jsx)(`span`,{className:`absolute left-[2px] top-[2px] w-[2px] h-[2px] rounded-full bg-cyan-400`}),(0,V.jsx)(`span`,{className:`absolute right-[2px] top-[2px] w-[2px] h-[2px] rounded-full bg-cyan-400`}),(0,V.jsx)(`span`,{className:`absolute left-[2px] bottom-[2px] w-[2px] h-[2px] rounded-full bg-cyan-400`}),(0,V.jsx)(`span`,{className:`absolute left-[5px] top-[3px] w-[4px] h-px bg-green-400/70`}),(0,V.jsx)(`span`,{className:`absolute right-[5px] top-[3px] w-[4px] h-px bg-green-400/70`}),(0,V.jsx)(`span`,{className:`absolute left-[5px] bottom-[3px] w-[4px] h-px bg-green-400/70`})]}),(0,V.jsx)(`span`,{className:`text-green-400 font-semibold`,children:`REMOTE OPERATIONS`})]})}),(0,V.jsx)(`span`,{className:`text-xs text-green-400/60 font-mono`,children:`ONLINE`})]}),(0,V.jsxs)(`div`,{className:`flex items-center justify-between`,children:[(0,V.jsxs)(`span`,{className:`flex items-center gap-2`,children:[(0,V.jsxs)(X.span,{animate:{y:[0,-1,0]},transition:{duration:3,repeat:1/0},className:`\r
+          `}),(0,V.jsx)(`span`,{className:`absolute left-[2px] top-[2px] w-[2px] h-[2px] rounded-full bg-cyan-400`}),(0,V.jsx)(`span`,{className:`absolute right-[2px] top-[2px] w-[2px] h-[2px] rounded-full bg-cyan-400`}),(0,V.jsx)(`span`,{className:`absolute left-[2px] bottom-[2px] w-[2px] h-[2px] rounded-full bg-cyan-400`}),(0,V.jsx)(`span`,{className:`absolute left-[5px] top-[3px] w-[4px] h-px bg-green-400/70`}),(0,V.jsx)(`span`,{className:`absolute right-[5px] top-[3px] w-[4px] h-px bg-green-400/70`}),(0,V.jsx)(`span`,{className:`absolute left-[5px] bottom-[3px] w-[4px] h-px bg-green-400/70`})]}),(0,V.jsx)(`span`,{className:`\r
+    text-green-400\r
+    font-semibold\r
+    text-[11px]\r
+    sm:text-sm\r
+    leading-none\r
+    whitespace-nowrap\r
+  `,children:`REMOTE OPERATIONS`})]})}),(0,V.jsx)(`span`,{className:`\r
+    text-[10px]\r
+    sm:text-xs\r
+    text-green-400/60\r
+    font-mono\r
+    whitespace-nowrap\r
+  `,children:`ONLINE`})]}),(0,V.jsxs)(`div`,{className:`flex items-center justify-between`,children:[(0,V.jsxs)(`span`,{className:`flex items-center gap-2`,children:[(0,V.jsxs)(X.span,{animate:{y:[0,-1,0]},transition:{duration:3,repeat:1/0},className:`\r
         inline-flex\r
         flex-col\r
         overflow-hidden\r
@@ -465,35 +478,58 @@ py-4\r
         border-white/10\r
         w-5\r
         h-3\r
-      `,children:[(0,V.jsx)(`span`,{className:`flex-1 bg-orange-400`}),(0,V.jsx)(`span`,{className:`flex-1 bg-white`}),(0,V.jsx)(`span`,{className:`flex-1 bg-green-400`})]}),(0,V.jsxs)(`span`,{className:`font-semibold`,children:[(0,V.jsx)(`span`,{className:`text-orange-400`,children:`I`}),(0,V.jsx)(`span`,{className:`text-white`,children:`N`}),(0,V.jsx)(`span`,{className:`text-green-400`,children:`D`})]})]}),(0,V.jsx)(`span`,{className:`text-orange-400 text-sm font-mono`,children:`GMT +5:30`})]}),(0,V.jsxs)(`div`,{className:`relative py-2`,children:[(0,V.jsxs)(`div`,{className:`relative flex items-center justify-between`,children:[(0,V.jsx)(X.div,{animate:{boxShadow:[`0 0 0px rgba(74,222,128,0.3)`,`0 0 18px rgba(74,222,128,0.8)`,`0 0 0px rgba(74,222,128,0.3)`]},transition:{duration:2,repeat:1/0},className:`\r
+      `,children:[(0,V.jsx)(`span`,{className:`flex-1 bg-orange-400`}),(0,V.jsx)(`span`,{className:`flex-1 bg-white`}),(0,V.jsx)(`span`,{className:`flex-1 bg-green-400`})]}),(0,V.jsxs)(`span`,{className:`font-semibold`,children:[(0,V.jsx)(`span`,{className:`text-orange-400`,children:`I`}),(0,V.jsx)(`span`,{className:`text-white`,children:`N`}),(0,V.jsx)(`span`,{className:`text-green-400`,children:`D`})]})]}),(0,V.jsx)(`span`,{className:`\r
+    text-green-400\r
+    text-xs\r
+    sm:text-sm\r
+    font-mono\r
+    whitespace-nowrap\r
+  `,children:`GMT +5:30`})]}),(0,V.jsxs)(`div`,{className:`relative py-2`,children:[(0,V.jsxs)(`div`,{className:`relative flex items-center justify-between`,children:[(0,V.jsx)(X.div,{animate:{boxShadow:[`0 0 0px rgba(74,222,128,0.3)`,`0 0 18px rgba(74,222,128,0.8)`,`0 0 0px rgba(74,222,128,0.3)`]},transition:{duration:2,repeat:1/0},className:`\r
         w-3\r
         h-3\r
         rounded-full\r
         bg-green-400\r
         relative\r
         z-10\r
-      `}),(0,V.jsx)(`div`,{className:`absolute left-2 right-2 h-px bg-green-400/20 overflow-hidden`,children:(0,V.jsx)(X.div,{animate:{x:[`-20%`,`530%`]},transition:{duration:2.5,repeat:1/0,ease:`linear`},className:`\r
+      `}),(0,V.jsx)(`div`,{className:`absolute left-2 right-2 h-px bg-green-400/20 overflow-hidden`,children:(0,V.jsx)(X.div,{animate:{x:[`-20%`,`730%`]},transition:{duration:2.5,repeat:1/0,ease:`linear`},className:`\r
           absolute\r
           top-0\r
           w-12\r
           h-px\r
           bg-linear-to-r\r
           from-transparent\r
-          via-green-400\r
+          via-cyan-400\r
           to-transparent\r
-        `})}),(0,V.jsx)(X.div,{animate:{scale:[1,1.25,1]},transition:{duration:1.8,repeat:1/0},className:`\r
-        w-3\r
-        h-3\r
-        rounded-full\r
-        bg-cyan-400\r
-        relative\r
-        z-10\r
-      `})]}),(0,V.jsxs)(`div`,{className:`flex justify-between mt-3`,children:[(0,V.jsx)(`span`,{className:`text-[10px] text-green-400/60 font-mono tracking-wider`,children:`INDIA NODE`}),(0,V.jsx)(X.span,{animate:{opacity:[.5,1,.5]},transition:{duration:1,repeat:1/0},className:`\r
-        text-[10px]\r
-        text-cyan-400\r
-        font-mono\r
-        tracking-wider\r
-      `,children:`SECURE TUNNEL ACTIVE`}),(0,V.jsx)(`span`,{className:`text-[10px] text-green-400/60 font-mono tracking-wider`,children:`REMOTE NODE`})]})]})]})]})]}),(0,V.jsxs)(`div`,{children:[(0,V.jsx)(`p`,{className:`\r
+        `})}),(0,V.jsx)(X.div,{animate:{boxShadow:[`0 0 0px rgba(251,146,60,0.3)`,`0 0 18px rgba(251,146,60,0.8)`,`0 0 0px rgba(251,146,60,0.3)`]},transition:{duration:2,repeat:1/0},className:`\r
+    w-3\r
+    h-3\r
+    rounded-full\r
+    bg-orange-400\r
+    relative\r
+    z-10\r
+  `})]}),(0,V.jsxs)(`div`,{className:`grid grid-cols-3 items-center mt-3`,children:[(0,V.jsx)(`span`,{className:`\r
+      text-[9px]\r
+      sm:text-[10px]\r
+      text-green-400/60\r
+      font-mono\r
+      tracking-wider\r
+      text-left\r
+    `,children:`INDIA NODE`}),(0,V.jsx)(X.span,{animate:{opacity:[.5,1,.5]},transition:{duration:1,repeat:1/0},className:`\r
+      text-[9px]\r
+      sm:text-[10px]\r
+      text-cyan-400\r
+      font-mono\r
+      tracking-wider\r
+      text-center\r
+      whitespace-nowrap\r
+    `,children:`SECURE TUNNEL ACTIVE`}),(0,V.jsx)(`span`,{className:`\r
+      text-[9px]\r
+      sm:text-[10px]\r
+      text-green-400/60\r
+      font-mono\r
+      tracking-wider\r
+      text-right\r
+    `,children:`REMOTE NODE`})]})]})]})]})]}),(0,V.jsxs)(`div`,{children:[(0,V.jsx)(`p`,{className:`\r
                         text-green-400/60\r
                         text-[10px]\r
                         sm:text-xs\r
