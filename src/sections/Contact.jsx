@@ -315,15 +315,15 @@ py-4
     <div className="absolute inset-0 bg-[linear-gradient(rgba(74,222,128,0.2)_1px,transparent_1px),linear-gradient(90deg,rgba(74,222,128,0.2)_1px,transparent_1px)] bg-[size:18px_18px]" />
   </div>
 
-  <div className="relative z-10 space-y-3">
+<div className="relative z-10 space-y-3 text-sm">
 
 {/* Remote */}
 <div className="flex items-center justify-between">
 
-  <div className="flex items-center gap-3">
+<div className="flex items-center gap-2 min-w-0">
 
     {/* YOUR REMOTE BADGE */}
-    <span className="flex items-center gap-2">
+<span className="flex items-center gap-2 min-w-0">
 
       <motion.span
         animate={{
@@ -378,17 +378,34 @@ py-4
         <span className="absolute left-[5px] bottom-[3px] w-[4px] h-px bg-green-400/70"></span>
       </motion.span>
 
-      <span className="text-green-400 font-semibold">
-        REMOTE OPERATIONS
-      </span>
+<span
+  className="
+    text-green-400
+    font-semibold
+    text-[11px]
+    sm:text-sm
+    leading-none
+    whitespace-nowrap
+  "
+>
+  REMOTE OPERATIONS
+</span>
 
     </span>
 
   </div>
 
-  <span className="text-xs text-green-400/60 font-mono">
-    ONLINE
-  </span>
+<span
+  className="
+    text-[10px]
+    sm:text-xs
+    text-green-400/60
+    font-mono
+    whitespace-nowrap
+  "
+>
+  ONLINE
+</span>
 
 </div>
 
@@ -429,9 +446,17 @@ py-4
 
   </span>
 
-  <span className="text-orange-400 text-sm font-mono">
-    GMT +5:30
-  </span>
+<span
+  className="
+    text-green-400
+    text-xs
+    sm:text-sm
+    font-mono
+    whitespace-nowrap
+  "
+>
+  GMT +5:30
+</span>
 
 </div>
 
@@ -471,7 +496,7 @@ py-4
 
       <motion.div
         animate={{
-          x: ["-20%", "530%"],
+          x: ["-20%", "730%"],
         }}
         transition={{
           duration: 2.5,
@@ -485,7 +510,7 @@ py-4
           h-px
           bg-linear-to-r
           from-transparent
-          via-green-400
+          via-cyan-400
           to-transparent
         "
       />
@@ -493,56 +518,81 @@ py-4
     </div>
 
     {/* Remote Node */}
-    <motion.div
-      animate={{
-        scale: [1, 1.25, 1],
-      }}
-      transition={{
-        duration: 1.8,
-        repeat: Infinity,
-      }}
-      className="
-        w-3
-        h-3
-        rounded-full
-        bg-cyan-400
-        relative
-        z-10
-      "
-    />
+<motion.div
+  animate={{
+    boxShadow: [
+      "0 0 0px rgba(251,146,60,0.3)",
+      "0 0 18px rgba(251,146,60,0.8)",
+      "0 0 0px rgba(251,146,60,0.3)",
+    ],
+  }}
+  transition={{
+    duration: 2,
+    repeat: Infinity,
+  }}
+  className="
+    w-3
+    h-3
+    rounded-full
+    bg-orange-400
+    relative
+    z-10
+  "
+/>
 
   </div>
 
   {/* Status */}
-  <div className="flex justify-between mt-3">
+<div className="grid grid-cols-3 items-center mt-3">
 
-    <span className="text-[10px] text-green-400/60 font-mono tracking-wider">
-      INDIA NODE
-    </span>
+  <span
+    className="
+      text-[9px]
+      sm:text-[10px]
+      text-green-400/60
+      font-mono
+      tracking-wider
+      text-left
+    "
+  >
+    INDIA NODE
+  </span>
 
-    <motion.span
-      animate={{
-        opacity: [0.5, 1, 0.5],
-      }}
-      transition={{
-        duration: 1,
-        repeat: Infinity,
-      }}
-      className="
-        text-[10px]
-        text-cyan-400
-        font-mono
-        tracking-wider
-      "
-    >
-      SECURE TUNNEL ACTIVE
-    </motion.span>
+  <motion.span
+    animate={{
+      opacity: [0.5, 1, 0.5],
+    }}
+    transition={{
+      duration: 1,
+      repeat: Infinity,
+    }}
+    className="
+      text-[9px]
+      sm:text-[10px]
+      text-cyan-400
+      font-mono
+      tracking-wider
+      text-center
+      whitespace-nowrap
+    "
+  >
+    SECURE TUNNEL ACTIVE
+  </motion.span>
 
-    <span className="text-[10px] text-green-400/60 font-mono tracking-wider">
-      REMOTE NODE
-    </span>
+  <span
+    className="
+      text-[9px]
+      sm:text-[10px]
+      text-green-400/60
+      font-mono
+      tracking-wider
+      text-right
+    "
+  >
+    REMOTE NODE
+  </span>
 
-  </div>
+</div>
 
 </div>
 
