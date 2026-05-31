@@ -112,6 +112,7 @@ Includes:
 * Neon Security UI Elements
 * Animated Security Nodes
 * Secure Connection Tunnel
+* Advanced Visuals
 
 ### Case Studies
 

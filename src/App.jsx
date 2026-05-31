@@ -28,10 +28,12 @@ export default function App() {
     typeof window !== "undefined" && window.innerWidth < 768;
 
   // Optional: keep scroll smooth behavior once globally
-  useEffect(() => {
-    document.documentElement.style.scrollBehavior = "smooth";
-  }, []);
+ useEffect(() => {
+  document.documentElement.style.scrollBehavior = "smooth";
 
+  window.history.scrollRestoration = "manual";
+  window.scrollTo(0, 0);
+}, []);
   return (
     <>
       {/* LOADING */}
