@@ -22,7 +22,7 @@ useEffect(() => {
       {loading && (
 
         <motion.div
-          className="fixed inset-0 z-[99999] overflow-hidden bg-black flex items-center justify-center px-6"
+          className="fixed inset-0 z-99999 overflow-hidden bg-black flex items-center justify-center px-6"
           initial={{ opacity: 1 }}
           exit={{
             opacity: 0,
