@@ -95,6 +95,8 @@ export default function Footer() {
             <a href="#about" className="hover:text-green-400 transition">About</a>
             <a href="#skills" className="hover:text-green-400 transition">Skills</a>
             <a href="#projects" className="hover:text-green-400 transition">Projects</a>
+            <a href="#casestudies" className="hover:text-green-400 transition">Case Studies</a>                       
+            <a href="#services" className="hover:text-green-400 transition">Services</a>
             <a href="#contact" className="hover:text-green-400 transition">Contact</a>
           </div>
 
