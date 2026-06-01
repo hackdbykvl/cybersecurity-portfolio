@@ -66,7 +66,7 @@ export default function Contact() {
   <>
     Secure transmission failed. Report to{" "}
     <a
-      href="mailto:Namahindia9@gmail.com"
+      href="mailto:Keval99999@gmail.com"
       className="text-green-400 underline hover:text-green-300"
     >
       Namahindia9@gmail.com
